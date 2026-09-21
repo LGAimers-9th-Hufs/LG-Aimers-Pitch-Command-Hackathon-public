@@ -1,0 +1,6 @@
+[
+  {"val": 2024, "r": 0.4861, "S_A": 872.50, "S_B": 362.18, "s_rms": 0.04276, "w_closed": 0.151, "w_direct": 0.151, "S_projA": 905.69, "S_projAB": 906.03, "gain_re": 0.33, "w_implied": 0.045, "identity_gap": -0.001},
+  {"val": 2023, "r": 0.5000, "S_A": -1611.70, "S_B": -1891.49, "s_rms": 0.02528, "w_closed": 0.000, "w_direct": 0.000, "S_projA": 98.57, "S_projAB": 161.51, "gain_re": 62.94, "w_implied": -1.763, "identity_gap": 0.001},
+  {"val": 2022, "r": 0.5289, "S_A": 2293.44, "S_B": 2009.05, "s_rms": 0.04701, "w_closed": 0.340, "w_direct": 0.340, "S_projA": 2392.74, "S_projAB": 2426.09, "gain_re": 33.35, "w_implied": 0.372, "identity_gap": -0.002},
+  {"val": 2021, "r": 0.5328, "S_A": 1563.72, "S_B": 1223.95, "s_rms": 0.02536, "w_closed": 0.000, "w_direct": 0.000, "S_projA": 1563.10, "S_projAB": 1577.31, "gain_re": 14.21, "w_implied": 0.248, "identity_gap": -0.005}
+]

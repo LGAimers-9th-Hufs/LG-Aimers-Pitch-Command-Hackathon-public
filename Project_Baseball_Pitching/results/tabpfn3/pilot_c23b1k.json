@@ -1,0 +1,14 @@
+{
+ "tag": "c23b1k",
+ "context": "c23",
+ "n_ctx": 245525,
+ "n_query": 30000,
+ "n_est": 1,
+ "fit_mode": "fit_with_cache",
+ "kv": "auto",
+ "timing": {
+  "fit_s": 80.5,
+  "per_1k_s": 84.39,
+  "proj_245k_min_local": 345.7
+ }
+}

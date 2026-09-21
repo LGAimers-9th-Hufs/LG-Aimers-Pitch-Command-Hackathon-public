@@ -1,0 +1,18 @@
+{
+ "fold": 2024,
+ "arm": "legPnb",
+ "seeds": 3,
+ "solo_mean": 768.38,
+ "solo_sd": 10.11,
+ "solo_bag": 797.64,
+ "teacher": 645.73,
+ "rms_vs_legs": {
+  "clookup": 0.0267,
+  "cmoe": 0.02943,
+  "physmix": 0.02484,
+  "tm3L": 0.03048,
+  "cregime": 0.02661,
+  "ysy_mlp": 0.02961,
+  "D4_mean": 0.0244
+ }
+}

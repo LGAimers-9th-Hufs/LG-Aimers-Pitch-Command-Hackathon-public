@@ -1,0 +1,11 @@
+{
+  "go": false,
+  "model": "full_l7",
+  "cap": 0.01,
+  "gamma": 0.25,
+  "gain_weighted": -10.977904826348004,
+  "gain_min": -34.60108488093624,
+  "positive_folds": 1,
+  "promotion_rule": "3/3 positive, weighted >= 90, minimum >= 50",
+  "with_trackman": true
+}

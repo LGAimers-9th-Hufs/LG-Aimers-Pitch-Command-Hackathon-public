@@ -1,0 +1,1129 @@
+{
+ "note": "Pearson corr of (q-y) with numeric columns; resid_vs_y is trivial (label itself). bins share V23+V24 union decile edges.",
+ "scan": {
+  "V2024": [
+   {
+    "col": "game_month",
+    "r": 0.00753,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "game_id",
+    "r": 0.00738,
+    "n": 253507,
+    "is_id": true
+   },
+   {
+    "col": "strikes_before",
+    "r": -0.00704,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "game_dayofweek",
+    "r": -0.00665,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_batter_middle_rate",
+    "r": 0.00561,
+    "n": 253419,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_fastball_rate",
+    "r": 0.00435,
+    "n": 253426,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_strike_rate",
+    "r": 0.0041,
+    "n": 253426,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_offspeed_rate",
+    "r": -0.00394,
+    "n": 253426,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev3_game_middle_rate",
+    "r": 0.00391,
+    "n": 249869,
+    "is_id": false
+   },
+   {
+    "col": "runner_on_2b",
+    "r": -0.00364,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "home_win_expectancy",
+    "r": 0.00327,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "away_win_expectancy",
+    "r": -0.00327,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "run_total_before",
+    "r": -0.00317,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev5_game_middle_rate",
+    "r": 0.00306,
+    "n": 249869,
+    "is_id": false
+   },
+   {
+    "col": "run_bot_before",
+    "r": -0.00305,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "batter_hand",
+    "r": -0.00285,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "count_depth",
+    "r": -0.00281,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "num_runners_on",
+    "r": -0.00249,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "batter_id",
+    "r": 0.00232,
+    "n": 253507,
+    "is_id": true
+   },
+   {
+    "col": "app_pitch_no",
+    "r": 0.0023,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_middle_rate",
+    "r": 0.00219,
+    "n": 253426,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_reverse_rate",
+    "r": 0.00209,
+    "n": 253426,
+    "is_id": false
+   },
+   {
+    "col": "run_top_before",
+    "r": -0.00206,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "outs_before",
+    "r": -0.0018,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_ball_rate",
+    "r": -0.00175,
+    "n": 253426,
+    "is_id": false
+   },
+   {
+    "col": "balls_before",
+    "r": 0.0017,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_batter_success_rate",
+    "r": -0.0017,
+    "n": 253419,
+    "is_id": false
+   },
+   {
+    "col": "pitcher_team_id",
+    "r": -0.00167,
+    "n": 253507,
+    "is_id": true
+   },
+   {
+    "col": "asof_pitcher_success_rate",
+    "r": -0.00164,
+    "n": 253426,
+    "is_id": false
+   },
+   {
+    "col": "pitcher_hand",
+    "r": -0.00131,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "runner_on_3b",
+    "r": -0.00116,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev3_game_success_rate",
+    "r": 0.00108,
+    "n": 249869,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev1_game_middle_rate",
+    "r": 0.0009,
+    "n": 249869,
+    "is_id": false
+   },
+   {
+    "col": "score_diff_home",
+    "r": -0.00079,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_batter_n",
+    "r": 0.00069,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev5_game_success_rate",
+    "r": 0.00067,
+    "n": 249869,
+    "is_id": false
+   },
+   {
+    "col": "batter_team_id",
+    "r": 0.00046,
+    "n": 253507,
+    "is_id": true
+   },
+   {
+    "col": "runner_on_1b",
+    "r": -0.00043,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "score_diff_pitcher_team",
+    "r": -0.00037,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "pitcher_id",
+    "r": 0.00034,
+    "n": 253507,
+    "is_id": true
+   },
+   {
+    "col": "li",
+    "r": -0.00027,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev1_game_success_rate",
+    "r": 0.00026,
+    "n": 249869,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_n",
+    "r": 0.00011,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_pitchmix_n",
+    "r": 0.00011,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "inning",
+    "r": 0.0001,
+    "n": 253507,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_breaking_rate",
+    "r": -4e-05,
+    "n": 253426,
+    "is_id": false
+   }
+  ],
+  "V2024_resid_vs_y": -0.99549,
+  "V2023": [
+   {
+    "col": "asof_batter_middle_rate",
+    "r": -0.04835,
+    "n": 245454,
+    "is_id": false
+   },
+   {
+    "col": "asof_batter_n",
+    "r": -0.0481,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_ball_rate",
+    "r": 0.04547,
+    "n": 245462,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_strike_rate",
+    "r": -0.04538,
+    "n": 245462,
+    "is_id": false
+   },
+   {
+    "col": "asof_batter_success_rate",
+    "r": 0.03809,
+    "n": 245454,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_middle_rate",
+    "r": -0.03442,
+    "n": 245462,
+    "is_id": false
+   },
+   {
+    "col": "game_month",
+    "r": -0.03426,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "game_id",
+    "r": -0.03424,
+    "n": 245525,
+    "is_id": true
+   },
+   {
+    "col": "asof_pitcher_n",
+    "r": -0.03342,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_pitchmix_n",
+    "r": -0.03342,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "batter_id",
+    "r": 0.02891,
+    "n": 245525,
+    "is_id": true
+   },
+   {
+    "col": "asof_pitcher_offspeed_rate",
+    "r": -0.02801,
+    "n": 245462,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_fastball_rate",
+    "r": 0.02294,
+    "n": 245462,
+    "is_id": false
+   },
+   {
+    "col": "batter_hand",
+    "r": 0.01468,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_success_rate",
+    "r": 0.01397,
+    "n": 245462,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev1_game_success_rate",
+    "r": -0.01291,
+    "n": 242803,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev3_game_success_rate",
+    "r": -0.01263,
+    "n": 242803,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev5_game_middle_rate",
+    "r": -0.01096,
+    "n": 242803,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev5_game_success_rate",
+    "r": -0.01095,
+    "n": 242803,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_reverse_rate",
+    "r": -0.00927,
+    "n": 245462,
+    "is_id": false
+   },
+   {
+    "col": "game_dayofweek",
+    "r": 0.00922,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_prev3_game_middle_rate",
+    "r": -0.00889,
+    "n": 242803,
+    "is_id": false
+   },
+   {
+    "col": "asof_pitcher_breaking_rate",
+    "r": 0.00826,
+    "n": 245462,
+    "is_id": false
+   },
+   {
+    "col": "pitcher_team_id",
+    "r": -0.00692,
+    "n": 245525,
+    "is_id": true
+   },
+   {
+    "col": "num_runners_on",
+    "r": 0.00525,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "batter_team_id",
+    "r": -0.00502,
+    "n": 245525,
+    "is_id": true
+   },
+   {
+    "col": "runner_on_2b",
+    "r": 0.0042,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "runner_on_1b",
+    "r": 0.00415,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "app_pitch_no",
+    "r": -0.00368,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "score_diff_home",
+    "r": 0.00302,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "run_bot_before",
+    "r": 0.00284,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "outs_before",
+    "r": -0.00259,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "pitcher_id",
+    "r": 0.00233,
+    "n": 245525,
+    "is_id": true
+   },
+   {
+    "col": "asof_pitcher_prev1_game_middle_rate",
+    "r": -0.00214,
+    "n": 242803,
+    "is_id": false
+   },
+   {
+    "col": "runner_on_3b",
+    "r": 0.00207,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "pitcher_hand",
+    "r": -0.00184,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "balls_before",
+    "r": 0.00177,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "inning",
+    "r": -0.00174,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "strikes_before",
+    "r": -0.00174,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "run_total_before",
+    "r": 0.0013,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "home_win_expectancy",
+    "r": 0.00103,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "away_win_expectancy",
+    "r": -0.00103,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "run_top_before",
+    "r": -0.00083,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "li",
+    "r": 0.00076,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "score_diff_pitcher_team",
+    "r": -0.00056,
+    "n": 245525,
+    "is_id": false
+   },
+   {
+    "col": "count_depth",
+    "r": 0.00019,
+    "n": 245525,
+    "is_id": false
+   }
+  ],
+  "V2023_resid_vs_y": -0.99032
+ },
+ "bins": {
+  "game_month": {
+   "edges": [
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0
+   ],
+   "binmean2024": [
+    -0.01606,
+    -0.00447,
+    0.00034,
+    0.0007,
+    0.00739,
+    0.00045,
+    0.00519
+   ],
+   "na2024": {
+    "n": 0,
+    "bias": null
+   },
+   "binmean2023": [
+    null,
+    0.02683,
+    0.03319,
+    0.00919,
+    -0.00221,
+    0.00061,
+    -0.01596
+   ],
+   "na2023": {
+    "n": 0,
+    "bias": null
+   }
+  },
+  "strikes_before": {
+   "edges": [
+    0.0,
+    1.0,
+    2.0
+   ],
+   "binmean2024": [
+    null,
+    0.00359,
+    0.00132,
+    -0.00511
+   ],
+   "na2024": {
+    "n": 0,
+    "bias": null
+   },
+   "binmean2023": [
+    null,
+    0.0092,
+    0.00616,
+    0.00731
+   ],
+   "na2023": {
+    "n": 0,
+    "bias": null
+   }
+  },
+  "game_dayofweek": {
+   "edges": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0
+   ],
+   "binmean2024": [
+    0.0359,
+    0.00416,
+    0.00523,
+    0.00096,
+    -0.00672,
+    -0.00272,
+    -0.00079
+   ],
+   "na2024": {
+    "n": 0,
+    "bias": null
+   },
+   "binmean2023": [
+    -0.04423,
+    0.00734,
+    -0.00064,
+    0.00564,
+    0.01625,
+    0.01329,
+    0.0089
+   ],
+   "na2023": {
+    "n": 0,
+    "bias": null
+   }
+  },
+  "asof_batter_middle_rate": {
+   "edges": [
+    0.1293,
+    0.1389,
+    0.1436,
+    0.1466,
+    0.1489,
+    0.1514,
+    0.1545,
+    0.1597,
+    0.168
+   ],
+   "binmean2024": [
+    -0.00415,
+    -0.00315,
+    -0.00088,
+    0.00522,
+    -0.00427,
+    -0.00232,
+    0.00067,
+    0.00416,
+    -0.0021,
+    0.00738
+   ],
+   "na2024": {
+    "n": 88,
+    "bias": -0.00952
+   },
+   "binmean2023": [
+    0.10287,
+    0.00134,
+    0.00171,
+    -0.00348,
+    -0.01057,
+    -0.00332,
+    -0.00645,
+    -0.00763,
+    -0.00819,
+    0.00372
+   ],
+   "na2023": {
+    "n": 71,
+    "bias": 0.1311
+   }
+  },
+  "asof_pitcher_fastball_rate": {
+   "edges": [
+    0.4439,
+    0.4731,
+    0.4944,
+    0.5182,
+    0.5424,
+    0.566,
+    0.5917,
+    0.6208,
+    0.6658
+   ],
+   "binmean2024": [
+    -0.00542,
+    -0.0047,
+    -0.00252,
+    -0.00086,
+    0.00685,
+    0.0042,
+    -0.00243,
+    0.00069,
+    0.00633,
+    0.00186
+   ],
+   "na2024": {
+    "n": 81,
+    "bias": 0.03282
+   },
+   "binmean2023": [
+    0.00284,
+    -0.0049,
+    -0.00094,
+    0.00192,
+    0.00064,
+    0.00316,
+    0.01563,
+    -0.00444,
+    0.02445,
+    0.04498
+   ],
+   "na2023": {
+    "n": 63,
+    "bias": 0.13931
+   }
+  },
+  "asof_pitcher_strike_rate": {
+   "edges": [
+    0.4077,
+    0.4199,
+    0.4294,
+    0.4355,
+    0.4438,
+    0.453,
+    0.4606,
+    0.4688,
+    0.4863
+   ],
+   "binmean2024": [
+    0.001,
+    -0.00368,
+    -0.00114,
+    -0.00524,
+    0.00106,
+    0.00166,
+    -0.00225,
+    0.00874,
+    -0.00287,
+    0.00713
+   ],
+   "na2024": {
+    "n": 81,
+    "bias": 0.03282
+   },
+   "binmean2023": [
+    0.07415,
+    0.04502,
+    0.01716,
+    0.01185,
+    0.00058,
+    -0.00941,
+    -0.00582,
+    -0.01598,
+    -0.01321,
+    -0.01766
+   ],
+   "na2023": {
+    "n": 63,
+    "bias": 0.13931
+   }
+  },
+  "asof_pitcher_offspeed_rate": {
+   "edges": [
+    0.0357,
+    0.0677,
+    0.0973,
+    0.1166,
+    0.1415,
+    0.1661,
+    0.1941,
+    0.2257,
+    0.3043
+   ],
+   "binmean2024": [
+    0.00586,
+    0.00198,
+    -0.00063,
+    0.00385,
+    0.0019,
+    -0.00077,
+    -0.00216,
+    -0.00517,
+    -0.00222,
+    0.00044
+   ],
+   "na2024": {
+    "n": 81,
+    "bias": 0.03282
+   },
+   "binmean2023": [
+    0.05136,
+    0.03294,
+    0.00575,
+    0.01165,
+    0.00346,
+    0.00716,
+    -0.00842,
+    -0.00016,
+    -0.0228,
+    0.00118
+   ],
+   "na2023": {
+    "n": 63,
+    "bias": 0.13931
+   }
+  },
+  "asof_pitcher_prev3_game_middle_rate": {
+   "edges": [
+    0.0919,
+    0.1148,
+    0.1333,
+    0.1476,
+    0.1617,
+    0.1753,
+    0.1919,
+    0.2091,
+    0.2357
+   ],
+   "binmean2024": [
+    -0.00883,
+    -0.00033,
+    -0.00147,
+    0.00613,
+    -0.00023,
+    -3e-05,
+    -0.00375,
+    0.00416,
+    -0.00028,
+    0.00404
+   ],
+   "na2024": {
+    "n": 3638,
+    "bias": 0.01356
+   },
+   "binmean2023": [
+    0.01875,
+    0.01047,
+    0.01846,
+    0.00037,
+    -0.00311,
+    0.00885,
+    0.00104,
+    0.00112,
+    0.00835,
+    -0.00184
+   ],
+   "na2023": {
+    "n": 2722,
+    "bias": 0.0702
+   }
+  },
+  "runner_on_2b": {
+   "edges": [
+    0.0,
+    1.0
+   ],
+   "binmean2024": [
+    null,
+    0.00137,
+    -0.003
+   ],
+   "na2024": {
+    "n": 0,
+    "bias": null
+   },
+   "binmean2023": [
+    null,
+    0.00661,
+    0.0117
+   ],
+   "na2023": {
+    "n": 0,
+    "bias": null
+   }
+  },
+  "home_win_expectancy": {
+   "edges": [
+    5.9,
+    19.1,
+    33.7,
+    46.2,
+    52.4,
+    56.0,
+    68.8,
+    82.8,
+    95.2
+   ],
+   "binmean2024": [
+    0.00018,
+    -0.00481,
+    0.00036,
+    -0.001,
+    -0.00432,
+    0.00438,
+    0.00065,
+    0.00232,
+    0.00763,
+    -0.00132
+   ],
+   "na2024": {
+    "n": 0,
+    "bias": null
+   },
+   "binmean2023": [
+    0.00671,
+    0.00704,
+    0.00847,
+    0.01244,
+    0.00608,
+    0.00408,
+    0.00572,
+    0.00696,
+    0.01023,
+    0.00985
+   ],
+   "na2023": {
+    "n": 0,
+    "bias": null
+   }
+  },
+  "away_win_expectancy": {
+   "edges": [
+    4.8,
+    17.2,
+    31.3,
+    44.0,
+    47.6,
+    53.8,
+    66.3,
+    80.9,
+    94.1
+   ],
+   "binmean2024": [
+    -0.00127,
+    0.00769,
+    0.00233,
+    0.00058,
+    0.00341,
+    -0.00341,
+    -0.00011,
+    0.00025,
+    -0.00597,
+    0.00084
+   ],
+   "na2024": {
+    "n": 0,
+    "bias": null
+   },
+   "binmean2023": [
+    0.00979,
+    0.01047,
+    0.00777,
+    0.00536,
+    0.00328,
+    0.00559,
+    0.01245,
+    0.00885,
+    0.00751,
+    0.0065
+   ],
+   "na2023": {
+    "n": 0,
+    "bias": null
+   }
+  },
+  "run_total_before": {
+   "edges": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    7.0,
+    9.0,
+    12.0
+   ],
+   "binmean2024": [
+    null,
+    -0.00143,
+    0.0043,
+    0.00342,
+    -0.00471,
+    0.0032,
+    -0.00048,
+    0.00504,
+    0.00181,
+    -0.00531
+   ],
+   "na2024": {
+    "n": 0,
+    "bias": null
+   },
+   "binmean2023": [
+    null,
+    0.00527,
+    0.01152,
+    0.01353,
+    0.00273,
+    0.00668,
+    0.01065,
+    0.00515,
+    0.00579,
+    0.00836
+   ],
+   "na2023": {
+    "n": 0,
+    "bias": null
+   }
+  },
+  "asof_pitcher_prev5_game_middle_rate": {
+   "edges": [
+    0.1008,
+    0.122,
+    0.1377,
+    0.1505,
+    0.1626,
+    0.175,
+    0.1877,
+    0.2022,
+    0.2244
+   ],
+   "binmean2024": [
+    -0.00227,
+    -0.00438,
+    0.0018,
+    0.00128,
+    -0.00512,
+    -0.00147,
+    -0.001,
+    0.00588,
+    0.00213,
+    0.00158
+   ],
+   "na2024": {
+    "n": 3638,
+    "bias": 0.01356
+   },
+   "binmean2023": [
+    0.0266,
+    0.01741,
+    0.00579,
+    0.00283,
+    -0.00418,
+    0.0007,
+    0.00132,
+    0.00349,
+    0.00853,
+    0.0006
+   ],
+   "na2023": {
+    "n": 2722,
+    "bias": 0.0702
+   }
+  },
+  "run_bot_before": {
+   "edges": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    5.0,
+    6.0
+   ],
+   "binmean2024": [
+    null,
+    -0.00221,
+    0.00246,
+    0.00448,
+    -0.00046,
+    0.01508,
+    -0.00439
+   ],
+   "na2024": {
+    "n": 0,
+    "bias": null
+   },
+   "binmean2023": [
+    null,
+    0.00552,
+    0.00887,
+    0.01752,
+    0.00455,
+    0.00469,
+    0.00841
+   ],
+   "na2023": {
+    "n": 0,
+    "bias": null
+   }
+  }
+ }
+}

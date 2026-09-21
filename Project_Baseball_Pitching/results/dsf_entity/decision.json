@@ -1,0 +1,16 @@
+{
+  "go": false,
+  "incremental_go": true,
+  "config": "hier_context",
+  "cap": 0.15,
+  "gamma": 0.3,
+  "gain_mean": 61.649312731772376,
+  "history_weight": 0.45,
+  "attack_objective": 45.43755370184423,
+  "gain_min": 17.876240155623236,
+  "positive": 7,
+  "n_splits": 7,
+  "within_2024_mean": 27.74230404231085,
+  "cross_2022_2023": 29.568848998451358,
+  "promotion_rule": "maximize attack objective: 50% 2024 within-season, 25% stable cross-season, 25% older within-season; require latest and cross positive"
+}

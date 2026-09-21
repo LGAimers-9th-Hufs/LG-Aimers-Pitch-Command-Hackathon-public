@@ -1,0 +1,21 @@
+{
+ "tag": "c23_e4",
+ "context": "c23",
+ "n_ctx": 100000,
+ "n_query": 30000,
+ "n_est": 4,
+ "ref_lgbm": {
+  "score": 65.02762533782125,
+  "train_s": 2.0
+ },
+ "kv_cache": false,
+ "timing": {
+  "fit_s": 4.7,
+  "per_1k_s": 19.2,
+  "proj_245k_min_local": 78.6
+ },
+ "row_independence": {
+  "solo_vs_batch50": 0.04819893836975098,
+  "warm_vs_batch50_max": 0.02975490689277649
+ }
+}

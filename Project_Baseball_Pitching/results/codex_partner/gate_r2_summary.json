@@ -1,0 +1,15 @@
+{
+  "gate_calls_used": 2,
+  "final_candidate": "monotone_hierarchical_two_seed",
+  "folds": {
+    "2024": {"partner_affine_score": 707.9007708, "s_rms": 0.03183, "gain_re": 6.27, "w_implied": 0.164},
+    "2023": {"partner_affine_score": 110.8657788, "s_rms": 0.02863, "gain_re": 12.30, "w_implied": 0.998},
+    "2022": {"partner_affine_score": 2256.8407328, "s_rms": 0.03082, "gain_re": 2.75, "w_implied": 0.134},
+    "2021": {"partner_affine_score": 1364.1726248, "s_rms": 0.02728, "gain_re": 19.93, "w_implied": 0.235}
+  },
+  "gain_re_mean": 10.3125,
+  "gain_re_population_sd": 6.5188126795,
+  "gain_re_sample_sd": 7.5272765106,
+  "all_folds_positive": true,
+  "mean_greater_than_sample_sd": true
+}

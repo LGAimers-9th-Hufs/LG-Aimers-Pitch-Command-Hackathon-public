@@ -1,0 +1,3 @@
+
+# 파트너 서빙 아티팩트는 sha256으로 봉인돼 있다 — 개행 변환 금지(LightGBM 로드 실패)
+Project_Baseball_Pitching/results/codex_partner*/serving/** -text

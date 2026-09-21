@@ -1,0 +1,12 @@
+# 학습(재현) 환경 핀 — collect_package.py가 설치본에서 실측해 기록한다.
+# torch는 팀원 레그 cmoe(FactorTabM) 학습에만 쓰인다. physmix·tm3L은 CPU만으로 재현된다.
+numpy==2.2.6
+pandas==3.0.0
+scikit-learn==1.8.0
+scipy==1.17.0
+lightgbm==4.6.0
+joblib==1.5.3
+torch==2.11.0
+# 실험 하네스 전체(sweep/)에 추가로 쓰인 것 — 버전은 느슨
+xgboost
+catboost

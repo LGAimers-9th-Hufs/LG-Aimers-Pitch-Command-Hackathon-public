@@ -1,0 +1,38 @@
+{
+ "tag": "c23k100",
+ "context": "c23",
+ "n_ctx": 100000,
+ "n_query": 30000,
+ "n_est": 1,
+ "ref_lgbm": {
+  "score": 65.02762533782125,
+  "train_s": 2.4
+ },
+ "fit_mode": "fit_with_cache",
+ "kv": "int8",
+ "timing": {
+  "fit_s": 16.3,
+  "per_1k_s": 2.69,
+  "proj_245k_min_local": 11.0
+ },
+ "tabpfn": {
+  "score": -367.60568618774414,
+  "pred_s": 70.5,
+  "mean": 0.48848047852516174,
+  "sd": 0.06621103733778
+ },
+ "paired": {
+  "delta": -432.63,
+  "se": 158.03
+ },
+ "rms_vs_legs": {
+  "cregime": 0.05787,
+  "clookup": 0.05797,
+  "cmoe": 0.05854,
+  "physmix": 0.06005,
+  "tm3L": 0.06217,
+  "ysy_mlp": 0.05888,
+  "calP": 0.06022,
+  "D4_mean": 0.05813
+ }
+}

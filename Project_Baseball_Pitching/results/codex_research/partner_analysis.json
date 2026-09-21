@@ -1,0 +1,31 @@
+{
+  "folds": {
+    "2024": {
+      "S_A_aff": 905.6918483648202,
+      "S_B_raw": 660.4034151542315,
+      "S_B_aff": 673.12576867814,
+      "mean_A_aff": 0.4861049201797167,
+      "mean_B_raw": 0.4814077694865858,
+      "mean_B_aff": 0.4861049201797163,
+      "s_aff": 0.026908773137745624,
+      "s_perp": 0.023149233597047857,
+      "pre_recal_w": 0.09882574159243257,
+      "pre_recal_gain": 2.83089317888448,
+      "post_recal_w": 0.12857990926094165,
+      "post_recal_slope": 1.0385120182426586,
+      "post_recal_gain": 3.8250581489651267,
+      "identity_formula_post_gain": 3.825058148950112,
+      "file": "results/codex_partner/exp_mech/team_pred_2024.csv",
+      "projected_2025": {
+        "S_B_aff_projected": 828.5041421601854,
+        "pre_gain": 7.6399242578293,
+        "post_gain": 9.731688433994204,
+        "post_w": 0.19588498393027437,
+        "post_slope": 1.0528960417411535,
+        "s_perp_projected": 0.023842090141946916,
+        "breakeven_s": 0.022126959860085716
+      }
+    }
+  },
+  "note": "top-level partner CSV preferred; while unfinished, V2024 exp_mech fallback is used"
+}

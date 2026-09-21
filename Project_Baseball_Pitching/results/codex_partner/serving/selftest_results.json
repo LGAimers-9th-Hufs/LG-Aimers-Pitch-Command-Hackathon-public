@@ -1,0 +1,20 @@
+{
+  "proxy_rows": 245789,
+  "proxy_seconds_cold": 2.6769844999998895,
+  "proxy_dtype": "float64",
+  "proxy_nan_count": 0,
+  "proxy_min": 0.28261397366575647,
+  "proxy_max": 0.627242434072189,
+  "proxy_mean": 0.46319640035919074,
+  "proxy_std": 0.042745546711876574,
+  "full_2024_rows": 253507,
+  "full_2024_seconds_warm": 2.643385600000329,
+  "raw_mean_2024": 0.4627953386847706,
+  "raw_std_2024": 0.0426324779041149,
+  "validation_row_order_match": true,
+  "validation_prediction_correlation": 0.932095821363986,
+  "unseen_category_safe": true,
+  "forbidden_ast_hits": [],
+  "forbidden_grep_hits": [],
+  "passed": true
+}

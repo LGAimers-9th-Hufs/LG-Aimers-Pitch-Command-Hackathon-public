@@ -1,0 +1,32 @@
+{
+ "tag": "c23k100_q8k",
+ "context": "c23",
+ "n_ctx": 100000,
+ "n_query": 8000,
+ "n_est": 4,
+ "ref_lgbm": {
+  "score": 445.85077732798294,
+  "train_s": 1.9
+ },
+ "kv_cache": false,
+ "timing": {
+  "fit_s": 4.4,
+  "per_1k_s": 18.82,
+  "proj_245k_min_local": 77.1
+ },
+ "row_independence": {
+  "solo_vs_batch50": 0.04819893836975098,
+  "warm_vs_batch50_max": 0.02975490689277649,
+  "batch50_repeat_max": 0.0
+ },
+ "tabicl": {
+  "score": 579.0174007415771,
+  "pred_s": 37.3,
+  "mean": 0.5060595273971558,
+  "sd": 0.03583933785557747
+ },
+ "paired": {
+  "delta": 133.17,
+  "se": 225.85
+ }
+}

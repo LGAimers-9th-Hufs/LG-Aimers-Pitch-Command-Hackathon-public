@@ -1,0 +1,26 @@
+{
+  "elapsed_sec": 104.8,
+  "modules": [
+    "_classes.py",
+    "_ops.py",
+    "submission/build_lgbm_ensemble.py",
+    "submission/script_lgbm_template.py",
+    "sweep/eb_carrier.py",
+    "sweep/ens4_weights.py",
+    "sweep/ens5_pool.py",
+    "sweep/inseason.py",
+    "sweep/inseason_full.py",
+    "sweep/interaction_carrier.py",
+    "sweep/is_corrector.py",
+    "sweep/lgbm_family.py",
+    "sweep/nn_carrier.py",
+    "sweep/nn_member.py",
+    "sweep/phase2_ens_check.py",
+    "sweep/prev_denom.py",
+    "sweep/real_data.py",
+    "sweep/season_centering.py",
+    "sweep/tm_member.py",
+    "sweep/tm_physmix.py",
+    "sweep/trackman.py"
+  ]
+}

@@ -1,0 +1,71 @@
+# 원본 다운로드 아카이브 (추출본과 중복)
+# ⚠ 예전엔 `*.zip` 이었는데 그러면 **제출 zip까지 조용히 무시**되므로 경로를 좁혔다.
+/*/_original_download.zip
+
+# 대회 배포 데이터 720MB + 원본 아카이브(data/open.zip) — 재다운로드 가능
+Project_Baseball_Pitching/data/
+
+# 루트의 대회 데이터 중복 사본 (Project_Baseball_Pitching/data/와 동일 내용)
+/open/
+/open.zip
+
+# arXiv PDF 89.8MB — 디스크엔 두되 추적하지 않는다(.git 비대화의 원인).
+# PAPERS.md 는 `git add -f` 로 추적 중인 매니페스트.
+Project_Baseball_Pitching/papers/*.pdf
+
+# 재생성 가능한 산출물: 제출 zip · 예측 캐시 · figure
+# (run.json/leaderboard.csv 는 논문 근거 원본이라 커밋한다)
+Project_Baseball_Pitching/submission/dist/
+Project_Baseball_Pitching/results/cache/
+Project_Baseball_Pitching/results/runs/*/figures/
+Project_Baseball_Pitching/results/archive_synthetic/*/figures/
+
+# OS / 임시
+.DS_Store
+Thumbs.db
+*.tmp
+__pycache__/
+.ipynb_checkpoints/
+
+# Phase 2·3 예측 캐시 85MB (재생성 가능). 판정 근거인 *.json 은 커밋한다.
+Project_Baseball_Pitching/results/phase2/*.npz
+Project_Baseball_Pitching/results/phase3/*.npz
+
+# 트랙맨 시그니처 캐시 (sweep/trackman.py --sig 로 재생성 가능, 4MB)
+Project_Baseball_Pitching/results/trackman/sig_*.pkl
+
+# 서버 핀 버전 재현 venv (verify_submission.py가 필요시 생성)
+Project_Baseball_Pitching/submission/.venv_server/
+
+# ── D-59 정리 (2026-08-09) ─────────────────────────────────────────────
+# 예측 캐시 npz 713MB — 전부 재생성 가능(ens9_cache.py·각 arm 스크립트).
+# 판정 근거인 *.json / *.md 는 계속 커밋한다.
+Project_Baseball_Pitching/results/**/*.npz
+
+# 파트너 검증 예측 CSV 163MB — train_partner*.py 로 재생성(폴드 4개 ~5분).
+Project_Baseball_Pitching/results/**/team_pred_*.csv
+
+# Codex 실행 로그·중간 실험 폴더 (재현은 BRIEF.md + train_partner*.py 로 충분)
+Project_Baseball_Pitching/results/codex_*/codex_run*.log
+Project_Baseball_Pitching/results/codex_partner/exp_*/
+Project_Baseball_Pitching/results/codex_partner/r1/
+Project_Baseball_Pitching/results/codex_partner2/cache/
+
+# DSF chronological fold caches are reproducible and exceed GitHub's file limit.
+Project_Baseball_Pitching/results/dsf/cache/
+
+# 팀원 저장소 clone (수백 MB)
+Project_Baseball_Pitching/partners/
+Project_Baseball_Pitching/results/leg_matrix/*.npy
+
+# 세션 파생 예측 캐시·측정 전용 zip (재생성 가능 — sweep/tm_repr_leg.py, build_tm3_rowwise.py)
+Project_Baseball_Pitching/results/tm_repr/*.npy
+Project_Baseball_Pitching/results/tabpfn3/*.npy
+Project_Baseball_Pitching/results/leg_matrix/measure/
+
+# Phase 3 패키지 산출물 — collect_package.py가 언제든 재생성한다(수집기·문서만 추적)
+Project_Baseball_Pitching/phase3/package/
+Project_Baseball_Pitching/phase3/dist/
+
+# 공개용 정제 스냅샷 출력 (publish/export.py 가 재생성)
+publish/_export/

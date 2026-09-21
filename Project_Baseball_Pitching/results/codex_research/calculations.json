@@ -1,0 +1,1243 @@
+{
+  "constants": {
+    "C_2025": 402463.28568,
+    "V_2025": 0.24846986932246626,
+    "S_A_2025": 1025.5511136843,
+    "raw_slope_curvature_2025": 786.2,
+    "post_blend_slope_curvature_2025_inferred": 952.2818676068085
+  },
+  "game_type_postmortem": {
+    "b_train": 39133.40251723157,
+    "b_true_from_fixed_train_center": 40557.50000000287,
+    "b_true_LB": 40557.5,
+    "rho": 1.036390842379253,
+    "probe_beta_delta_over_2tstar": 0.8768237934904602,
+    "one_sided_realized_gain_ratio": 0.9999799073200132,
+    "failure_rho_upper": 9.118451025056954
+  },
+  "partition_weight_stability": {
+    "count12": {
+      "cells": 12,
+      "weights_reference": {
+        "0-0": 0.258286262822929,
+        "0-1": 0.12322960195025123,
+        "0-2": 0.060525716362098095,
+        "1-0": 0.10499548502737456,
+        "1-1": 0.1018946614855209,
+        "1-2": 0.09463680909394126,
+        "2-0": 0.03673465790608314,
+        "2-1": 0.05446982289918188,
+        "2-2": 0.08114883681831371,
+        "3-0": 0.012243304146453238,
+        "3-1": 0.024015451239651493,
+        "3-2": 0.04781939024820147
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.005334516157160574,
+          "fixed_level_rho_min": 0.919500811421348,
+          "fixed_level_rho_max": 1.0221007253796166,
+          "profiled_level_rho_min": 0.9194292616742763,
+          "profiled_level_rho_max": 1.0220985264085267
+        },
+        "2020": {
+          "max_abs_weight_error": 0.001965462524554651,
+          "fixed_level_rho_min": 0.9712740854621231,
+          "fixed_level_rho_max": 1.0280337596649494,
+          "profiled_level_rho_min": 0.9712294162553526,
+          "profiled_level_rho_max": 1.0280281786208059
+        },
+        "2021": {
+          "max_abs_weight_error": 0.004385303562632253,
+          "fixed_level_rho_min": 0.9575030593735113,
+          "fixed_level_rho_max": 1.134360732531286,
+          "profiled_level_rho_min": 0.9574797599800801,
+          "profiled_level_rho_max": 1.134197259169736
+        },
+        "2022": {
+          "max_abs_weight_error": 0.0026876735395011397,
+          "fixed_level_rho_min": 0.9278813785803178,
+          "fixed_level_rho_max": 1.038983117727321,
+          "profiled_level_rho_min": 0.9278319350490322,
+          "profiled_level_rho_max": 1.0389107644231341
+        },
+        "2023": {
+          "max_abs_weight_error": 0.0018569670713105696,
+          "fixed_level_rho_min": 0.9513169376396438,
+          "fixed_level_rho_max": 1.0212952952841585,
+          "profiled_level_rho_min": 0.9512912474022642,
+          "profiled_level_rho_max": 1.021267504456062
+        },
+        "2024": {
+          "max_abs_weight_error": 0.003200334595074683,
+          "fixed_level_rho_min": 0.9717262179313634,
+          "fixed_level_rho_max": 1.0497158523718964,
+          "profiled_level_rho_min": 0.9717166611718614,
+          "profiled_level_rho_max": 1.0495628527207441
+        }
+      }
+    },
+    "month": {
+      "cells": 8,
+      "weights_reference": {
+        "m10": 0.07262936820211892,
+        "m3": 0.01746060584695734,
+        "m4": 0.14008482182806226,
+        "m5": 0.17324139782467807,
+        "m6": 0.17182250327437204,
+        "m7": 0.1200921705222454,
+        "m8": 0.15020758027295925,
+        "m9": 0.15446155222860675
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.07007264215931587,
+          "fixed_level_rho_min": 0.10745230191339987,
+          "fixed_level_rho_max": 3.192145704669886,
+          "profiled_level_rho_min": 0.03785819532244472,
+          "profiled_level_rho_max": 3.1082681652528565
+        },
+        "2020": {
+          "max_abs_weight_error": 0.14008482182806226,
+          "fixed_level_rho_min": 0.0,
+          "fixed_level_rho_max": 2.1807033330713295,
+          "profiled_level_rho_min": 0.0,
+          "profiled_level_rho_max": 2.0830772254172727
+        },
+        "2021": {
+          "max_abs_weight_error": 0.0797293056306856,
+          "fixed_level_rho_min": 0.015274911672683024,
+          "fixed_level_rho_max": 2.0157794834001925,
+          "profiled_level_rho_min": 0.0,
+          "profiled_level_rho_max": 1.9352240711845967
+        },
+        "2022": {
+          "max_abs_weight_error": 0.03514633981910993,
+          "fixed_level_rho_min": 0.01702751326980781,
+          "fixed_level_rho_max": 1.1748389093609726,
+          "profiled_level_rho_min": 0.0,
+          "profiled_level_rho_max": 1.1728842939312996
+        },
+        "2023": {
+          "max_abs_weight_error": 0.02807727979091748,
+          "fixed_level_rho_min": 0.017661712647331972,
+          "fixed_level_rho_max": 1.171471842259257,
+          "profiled_level_rho_min": 0.0,
+          "profiled_level_rho_max": 1.166512694765801
+        },
+        "2024": {
+          "max_abs_weight_error": 0.06603783424053206,
+          "fixed_level_rho_min": 0.15938192921146885,
+          "fixed_level_rho_max": 2.76123774533259,
+          "profiled_level_rho_min": 0.09719741330333011,
+          "profiled_level_rho_max": 2.7076545252135524
+        }
+      }
+    },
+    "month_m34": {
+      "cells": 7,
+      "weights_reference": {
+        "m10": 0.07262936820211892,
+        "m4": 0.15754542767501958,
+        "m5": 0.17324139782467807,
+        "m6": 0.17182250327437204,
+        "m7": 0.1200921705222454,
+        "m8": 0.15020758027295925,
+        "m9": 0.15446155222860675
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.07007264215931587,
+          "fixed_level_rho_min": 0.10844624947461584,
+          "fixed_level_rho_max": 1.3494351195978775,
+          "profiled_level_rho_min": 0.03785953469199213,
+          "profiled_level_rho_max": 1.3294540556468475
+        },
+        "2020": {
+          "max_abs_weight_error": 0.15754542767501958,
+          "fixed_level_rho_min": 0.17557657200971835,
+          "fixed_level_rho_max": 2.1807033330713312,
+          "profiled_level_rho_min": 1.8897757074490223e-16,
+          "profiled_level_rho_max": 2.0830772254172754
+        },
+        "2021": {
+          "max_abs_weight_error": 0.0797293056306856,
+          "fixed_level_rho_min": 0.49354269762747327,
+          "fixed_level_rho_max": 2.0144816990082974,
+          "profiled_level_rho_min": 0.4602072313901896,
+          "profiled_level_rho_max": 1.9296602484444003
+        },
+        "2022": {
+          "max_abs_weight_error": 0.03514633981910993,
+          "fixed_level_rho_min": 0.5534029763418405,
+          "fixed_level_rho_max": 1.1169140536798918,
+          "profiled_level_rho_min": 0.535495256684035,
+          "profiled_level_rho_max": 1.116364634473942
+        },
+        "2023": {
+          "max_abs_weight_error": 0.012052109564826718,
+          "fixed_level_rho_min": 0.9418610866648387,
+          "fixed_level_rho_max": 1.0613517480223766,
+          "profiled_level_rho_min": 0.9412537178776437,
+          "profiled_level_rho_max": 1.0612045762335767
+        },
+        "2024": {
+          "max_abs_weight_error": 0.06603783424053206,
+          "fixed_level_rho_min": 0.16010014354806174,
+          "fixed_level_rho_max": 1.3181173317679846,
+          "profiled_level_rho_min": 0.09720372636807613,
+          "profiled_level_rho_max": 1.3019431733519757
+        }
+      }
+    },
+    "inning": {
+      "cells": 10,
+      "weights_reference": {
+        "1": 0.11661103171869958,
+        "10": 0.013525936009415006,
+        "2": 0.11040735086353935,
+        "3": 0.11110696824333668,
+        "4": 0.11105002264265551,
+        "5": 0.11147711464776434,
+        "6": 0.11300040946598586,
+        "7": 0.11436710388233412,
+        "8": 0.113905437762526,
+        "9": 0.08454862476374354
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.0021449425011123707,
+          "fixed_level_rho_min": 0.9329419046184757,
+          "fixed_level_rho_max": 1.0139216554717587,
+          "profiled_level_rho_min": 0.9328825687283708,
+          "profiled_level_rho_max": 1.0139174844888927
+        },
+        "2020": {
+          "max_abs_weight_error": 0.0017411785561243787,
+          "fixed_level_rho_min": 0.9806307147374439,
+          "fixed_level_rho_max": 1.014626246985766,
+          "profiled_level_rho_min": 0.9806286438680076,
+          "profiled_level_rho_max": 1.0146246124548728
+        },
+        "2021": {
+          "max_abs_weight_error": 0.007175971624256682,
+          "fixed_level_rho_min": 0.47673926996895966,
+          "fixed_level_rho_max": 1.0143237674826473,
+          "profiled_level_rho_min": 0.47288067045248633,
+          "profiled_level_rho_max": 1.0143232608007067
+        },
+        "2022": {
+          "max_abs_weight_error": 0.002257667792227202,
+          "fixed_level_rho_min": 0.9817056271982486,
+          "fixed_level_rho_max": 1.1646372370960825,
+          "profiled_level_rho_min": 0.9816985207334603,
+          "profiled_level_rho_max": 1.1642595551826163
+        },
+        "2023": {
+          "max_abs_weight_error": 0.004390773083345404,
+          "fixed_level_rho_min": 0.9769034781507709,
+          "fixed_level_rho_max": 1.3201708879741576,
+          "profiled_level_rho_min": 0.9768448842443508,
+          "profiled_level_rho_max": 1.3187283536906582
+        },
+        "2024": {
+          "max_abs_weight_error": 0.0016531320242093115,
+          "fixed_level_rho_min": 0.9857722448588978,
+          "fixed_level_rho_max": 1.1205497728938476,
+          "profiled_level_rho_min": 0.985764300605898,
+          "profiled_level_rho_max": 1.1203465631040916
+        }
+      }
+    },
+    "hand4": {
+      "cells": 4,
+      "weights_reference": {
+        "P1-B1": 0.1154450027523707,
+        "P1-B2": 0.14308192302581804,
+        "P2-B1": 0.35621845959438464,
+        "P2-B2": 0.3852546146274266
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.03852313541247382,
+          "fixed_level_rho_min": 0.9344237330925949,
+          "fixed_level_rho_max": 1.1008696612718625,
+          "profiled_level_rho_min": 0.9318066408385988,
+          "profiled_level_rho_max": 1.1004362564569135
+        },
+        "2020": {
+          "max_abs_weight_error": 0.02716390827629217,
+          "fixed_level_rho_min": 0.849922427451342,
+          "fixed_level_rho_max": 1.0489577041121276,
+          "profiled_level_rho_min": 0.8489970730107627,
+          "profiled_level_rho_max": 1.0483623082734919
+        },
+        "2021": {
+          "max_abs_weight_error": 0.010987284678346698,
+          "fixed_level_rho_min": 0.934476411788261,
+          "fixed_level_rho_max": 1.0214493712051858,
+          "profiled_level_rho_min": 0.9337348696351444,
+          "profiled_level_rho_max": 1.021367541435232
+        },
+        "2022": {
+          "max_abs_weight_error": 0.024087191145901132,
+          "fixed_level_rho_min": 0.9035589611495566,
+          "fixed_level_rho_max": 1.0734648650920071,
+          "profiled_level_rho_min": 0.9023886358779458,
+          "profiled_level_rho_max": 1.0734449063770595
+        },
+        "2023": {
+          "max_abs_weight_error": 0.020139045948066037,
+          "fixed_level_rho_min": 0.9692637517811704,
+          "fixed_level_rho_max": 1.1055430586178132,
+          "profiled_level_rho_min": 0.968594680117616,
+          "profiled_level_rho_max": 1.1044036251402771
+        },
+        "2024": {
+          "max_abs_weight_error": 0.02073213595819856,
+          "fixed_level_rho_min": 0.9667588321759079,
+          "fixed_level_rho_max": 1.1177090237648382,
+          "profiled_level_rho_min": 0.9661479119581529,
+          "profiled_level_rho_max": 1.1149059492499722
+        }
+      }
+    },
+    "game_type": {
+      "cells": 2,
+      "weights_reference": {
+        "F": 0.10914844633419475,
+        "R": 0.8908515536658053
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.0005360283115928288,
+          "fixed_level_rho_min": 0.9956907006189465,
+          "fixed_level_rho_max": 0.9956907006189465,
+          "profiled_level_rho_min": 0.9956877456524766,
+          "profiled_level_rho_max": 0.9956877456524766
+        },
+        "2020": {
+          "max_abs_weight_error": 0.014047109515765266,
+          "fixed_level_rho_min": 0.8870708896662415,
+          "fixed_level_rho_max": 0.8870708896662415,
+          "profiled_level_rho_min": 0.8850415673244239,
+          "profiled_level_rho_max": 0.8850415673244239
+        },
+        "2021": {
+          "max_abs_weight_error": 0.004485330359319417,
+          "fixed_level_rho_min": 0.9639410252719638,
+          "fixed_level_rho_max": 0.9639410252719638,
+          "profiled_level_rho_min": 0.9637341226607847,
+          "profiled_level_rho_max": 0.9637341226607847
+        },
+        "2022": {
+          "max_abs_weight_error": 0.01388769512827373,
+          "fixed_level_rho_min": 1.1116475281738407,
+          "fixed_level_rho_max": 1.1116475281738407,
+          "profiled_level_rho_min": 1.1096640042264991,
+          "profiled_level_rho_max": 1.1096640042264991
+        },
+        "2023": {
+          "max_abs_weight_error": 0.0045318085172718625,
+          "fixed_level_rho_min": 0.9635673728118879,
+          "fixed_level_rho_max": 0.9635673728118879,
+          "profiled_level_rho_min": 0.9633561600270735,
+          "profiled_level_rho_max": 0.9633561600270735
+        },
+        "2024": {
+          "max_abs_weight_error": 0.009230927805375377,
+          "fixed_level_rho_min": 1.0742103180334892,
+          "fixed_level_rho_max": 1.0742103180334892,
+          "profiled_level_rho_min": 1.0733339877723507,
+          "profiled_level_rho_max": 1.0733339877723507
+        }
+      }
+    }
+  },
+  "partition_weight_stability_ref2024": {
+    "count12": {
+      "cells": 12,
+      "weights_reference": {
+        "0-0": 0.25765363481087306,
+        "0-1": 0.12387034677543421,
+        "0-2": 0.06372605095717278,
+        "1-0": 0.10428903343891885,
+        "1-1": 0.09985128615777868,
+        "1-2": 0.09624586303336792,
+        "2-0": 0.037048286635083055,
+        "2-1": 0.05303995550418726,
+        "2-2": 0.0814178701179849,
+        "3-0": 0.012678150899186216,
+        "3-1": 0.023746878784412263,
+        "3-2": 0.04643264288560079
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.0059671441692165095,
+          "fixed_level_rho_min": 0.8884192691227407,
+          "fixed_level_rho_max": 1.0220734518960337,
+          "profiled_level_rho_min": 0.8882735920021224,
+          "profiled_level_rho_max": 1.0220718177872898
+        },
+        "2020": {
+          "max_abs_weight_error": 0.005042057135297789,
+          "fixed_level_rho_min": 0.9259425613598093,
+          "fixed_level_rho_max": 1.0480984178915245,
+          "profiled_level_rho_min": 0.9255653837679504,
+          "profiled_level_rho_max": 1.04803002689786
+        },
+        "2021": {
+          "max_abs_weight_error": 0.005847886092832946,
+          "fixed_level_rho_min": 0.9132327412040371,
+          "fixed_level_rho_max": 1.1177317916807807,
+          "profiled_level_rho_min": 0.9128639019801037,
+          "profiled_level_rho_max": 1.1175178943003574
+        },
+        "2022": {
+          "max_abs_weight_error": 0.002079437318008484,
+          "fixed_level_rho_min": 0.896594927450262,
+          "fixed_level_rho_max": 1.0265949535288599,
+          "profiled_level_rho_min": 0.8964643805365421,
+          "profiled_level_rho_max": 1.0265811083288598
+        },
+        "2023": {
+          "max_abs_weight_error": 0.004563032934568154,
+          "fixed_level_rho_min": 0.9188575538760653,
+          "fixed_level_rho_max": 1.0421564721233156,
+          "profiled_level_rho_min": 0.9188175160863842,
+          "profiled_level_rho_max": 1.0421228078916505
+        },
+        "2024": {
+          "max_abs_weight_error": 0.0,
+          "fixed_level_rho_min": 0.999999999999995,
+          "fixed_level_rho_max": 1.0000000000000024,
+          "profiled_level_rho_min": 0.9999999999999951,
+          "profiled_level_rho_max": 1.0000000000000022
+        }
+      }
+    },
+    "month": {
+      "cells": 8,
+      "weights_reference": {
+        "m10": 0.00659153396158686,
+        "m3": 0.04875999479304319,
+        "m4": 0.16799536107484211,
+        "m5": 0.17387291080719663,
+        "m6": 0.17559278442015408,
+        "m7": 0.13045004674427135,
+        "m8": 0.16536032535590733,
+        "m9": 0.13137704284299842
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.014461342161259189,
+          "fixed_level_rho_min": 0.39191086920189616,
+          "fixed_level_rho_max": 1.1502478258463396,
+          "profiled_level_rho_min": 0.38945102003398613,
+          "profiled_level_rho_max": 1.1493630203699317
+        },
+        "2020": {
+          "max_abs_weight_error": 0.16799536107484211,
+          "fixed_level_rho_min": 0.0,
+          "fixed_level_rho_max": 24.886689880501873,
+          "profiled_level_rho_min": 0.0,
+          "profiled_level_rho_max": 21.09299126451499
+        },
+        "2021": {
+          "max_abs_weight_error": 0.14576713987121767,
+          "fixed_level_rho_min": 0.03826029956796867,
+          "fixed_level_rho_max": 22.96759432914155,
+          "profiled_level_rho_min": 8.846675787966281e-17,
+          "profiled_level_rho_max": 19.74228412956014
+        },
+        "2022": {
+          "max_abs_weight_error": 0.04875999479304319,
+          "fixed_level_rho_min": 0.049333779343591254,
+          "fixed_level_rho_max": 5.655521345760333,
+          "profiled_level_rho_min": 0.0,
+          "profiled_level_rho_max": 5.51223209315755
+        },
+        "2023": {
+          "max_abs_weight_error": 0.0652463644194334,
+          "fixed_level_rho_min": 0.04791976026890063,
+          "fixed_level_rho_max": 10.832861955114907,
+          "profiled_level_rho_min": 2.2510466945625592e-17,
+          "profiled_level_rho_max": 10.186643157584172
+        },
+        "2024": {
+          "max_abs_weight_error": 0.0,
+          "fixed_level_rho_min": 0.9999999999999915,
+          "fixed_level_rho_max": 1.000000000000001,
+          "profiled_level_rho_min": 0.9999999999999908,
+          "profiled_level_rho_max": 1.0000000000000013
+        }
+      }
+    },
+    "month_m34": {
+      "cells": 7,
+      "weights_reference": {
+        "m10": 0.00659153396158686,
+        "m4": 0.2167553558678853,
+        "m5": 0.17387291080719663,
+        "m6": 0.17559278442015408,
+        "m7": 0.13045004674427135,
+        "m8": 0.16536032535590733,
+        "m9": 0.13137704284299842
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.014461342161259189,
+          "fixed_level_rho_min": 0.39191979503485663,
+          "fixed_level_rho_max": 1.0686766359546318,
+          "profiled_level_rho_min": 0.3894523696090788,
+          "profiled_level_rho_max": 1.0677299901799902
+        },
+        "2020": {
+          "max_abs_weight_error": 0.2167553558678853,
+          "fixed_level_rho_min": 0.22863205506923268,
+          "fixed_level_rho_max": 24.886689880501926,
+          "profiled_level_rho_min": 0.0,
+          "profiled_level_rho_max": 21.092991264515042
+        },
+        "2021": {
+          "max_abs_weight_error": 0.14576713987121767,
+          "fixed_level_rho_min": 0.4534732138297598,
+          "fixed_level_rho_max": 22.967583171876267,
+          "profiled_level_rho_min": 0.4248624471685398,
+          "profiled_level_rho_max": 19.735413523838503
+        },
+        "2022": {
+          "max_abs_weight_error": 0.049483906976697606,
+          "fixed_level_rho_min": 0.813705513631035,
+          "fixed_level_rho_max": 5.655479074361894,
+          "profiled_level_rho_min": 0.8070723524434994,
+          "profiled_level_rho_max": 5.510855682946232
+        },
+        "2023": {
+          "max_abs_weight_error": 0.0652463644194334,
+          "fixed_level_rho_min": 0.8135570709442135,
+          "fixed_level_rho_max": 10.832838986242031,
+          "profiled_level_rho_min": 0.8080561175845493,
+          "profiled_level_rho_max": 10.183762662073333
+        },
+        "2024": {
+          "max_abs_weight_error": 0.0,
+          "fixed_level_rho_min": 0.9999999999999936,
+          "fixed_level_rho_max": 1.0000000000000027,
+          "profiled_level_rho_min": 0.9999999999999937,
+          "profiled_level_rho_max": 1.0000000000000024
+        }
+      }
+    },
+    "inning": {
+      "cells": 10,
+      "weights_reference": {
+        "1": 0.11541693128789343,
+        "10": 0.015179068033624317,
+        "2": 0.1108766227362558,
+        "3": 0.1100285199225268,
+        "4": 0.11047821164701567,
+        "5": 0.11177995084948344,
+        "6": 0.11323947662194732,
+        "7": 0.1153577613241449,
+        "8": 0.1143715952616693,
+        "9": 0.08327186231543902
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.003135599942923145,
+          "fixed_level_rho_min": 0.8331218676401128,
+          "fixed_level_rho_max": 1.0231584778149787,
+          "profiled_level_rho_min": 0.8326865460875886,
+          "profiled_level_rho_max": 1.0231284600174424
+        },
+        "2020": {
+          "max_abs_weight_error": 0.0025499962841586538,
+          "fixed_level_rho_min": 0.8755999152904694,
+          "fixed_level_rho_max": 1.0287166962129344,
+          "profiled_level_rho_min": 0.8753606399700122,
+          "profiled_level_rho_max": 1.028679053073146
+        },
+        "2021": {
+          "max_abs_weight_error": 0.008829103648465994,
+          "fixed_level_rho_min": 0.4272986650634881,
+          "fixed_level_rho_max": 1.0244109719505827,
+          "profiled_level_rho_min": 0.42208678135349614,
+          "profiled_level_rho_max": 1.0244108856271128
+        },
+        "2022": {
+          "max_abs_weight_error": 0.0025721927695806918,
+          "fixed_level_rho_min": 0.9823413526489899,
+          "fixed_level_rho_max": 1.039360057200038,
+          "profiled_level_rho_min": 0.9823268170783291,
+          "profiled_level_rho_max": 1.0393461966529118
+        },
+        "2023": {
+          "max_abs_weight_error": 0.0027376410591360926,
+          "fixed_level_rho_min": 0.9848272348782051,
+          "fixed_level_rho_max": 1.1775844986258677,
+          "profiled_level_rho_min": 0.9848248818303506,
+          "profiled_level_rho_max": 1.1770863095709818
+        },
+        "2024": {
+          "max_abs_weight_error": 0.0,
+          "fixed_level_rho_min": 0.9999999999999979,
+          "fixed_level_rho_max": 1.0000000000000022,
+          "profiled_level_rho_min": 0.9999999999999983,
+          "profiled_level_rho_max": 1.0000000000000027
+        }
+      }
+    },
+    "hand4": {
+      "cells": 4,
+      "weights_reference": {
+        "P1-B1": 0.12028464697227295,
+        "P1-B2": 0.16306058609821425,
+        "P2-B1": 0.3521322882602847,
+        "P2-B2": 0.36452247866922804
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.04827294533872434,
+          "fixed_level_rho_min": 0.9149858041792212,
+          "fixed_level_rho_max": 1.0596016904672543,
+          "profiled_level_rho_min": 0.9148186903937229,
+          "profiled_level_rho_max": 1.0507726468852925
+        },
+        "2020": {
+          "max_abs_weight_error": 0.04789604423449073,
+          "fixed_level_rho_min": 0.7847166733809818,
+          "fixed_level_rho_max": 1.0873104657028274,
+          "profiled_level_rho_min": 0.7830315228621055,
+          "profiled_level_rho_max": 1.0846132350727893
+        },
+        "2021": {
+          "max_abs_weight_error": 0.030965947750742906,
+          "fixed_level_rho_min": 0.843529254307887,
+          "fixed_level_rho_max": 1.0558550901125499,
+          "profiled_level_rho_min": 0.8378127703949777,
+          "profiled_level_rho_max": 1.0555622050883104
+        },
+        "2022": {
+          "max_abs_weight_error": 0.035785581249180826,
+          "fixed_level_rho_min": 0.8225320151510913,
+          "fixed_level_rho_max": 1.0548959355221523,
+          "profiled_level_rho_min": 0.8134631028951652,
+          "profiled_level_rho_max": 1.053914220760048
+        },
+        "2023": {
+          "max_abs_weight_error": 0.010660626827264236,
+          "fixed_level_rho_min": 0.9464978708311812,
+          "fixed_level_rho_max": 1.0639209888867474,
+          "profiled_level_rho_min": 0.9457754162864418,
+          "profiled_level_rho_max": 1.0632976196418868
+        },
+        "2024": {
+          "max_abs_weight_error": 0.0,
+          "fixed_level_rho_min": 1.0000000000000002,
+          "fixed_level_rho_max": 1.0000000000000009,
+          "profiled_level_rho_min": 1.0000000000000007,
+          "profiled_level_rho_max": 1.0000000000000013
+        }
+      }
+    },
+    "game_type": {
+      "cells": 2,
+      "weights_reference": {
+        "F": 0.11837937413957011,
+        "R": 0.8816206258604299
+      },
+      "seasons": {
+        "2019": {
+          "max_abs_weight_error": 0.009766956116968206,
+          "fixed_level_rho_min": 0.9285728552490295,
+          "fixed_level_rho_max": 0.9285728552490295,
+          "profiled_level_rho_min": 0.9276588247419387,
+          "profiled_level_rho_max": 0.9276588247419387
+        },
+        "2020": {
+          "max_abs_weight_error": 0.023278037321140643,
+          "fixed_level_rho_min": 0.8297643890948764,
+          "fixed_level_rho_max": 0.8297643890948764,
+          "profiled_level_rho_min": 0.8245723860485238,
+          "profiled_level_rho_max": 0.8245723860485238
+        },
+        "2021": {
+          "max_abs_weight_error": 0.013716258164694795,
+          "fixed_level_rho_min": 0.8996910454354067,
+          "fixed_level_rho_max": 0.8996910454354067,
+          "profiled_level_rho_min": 0.8978883866903029,
+          "profiled_level_rho_max": 0.8978883866903029
+        },
+        "2022": {
+          "max_abs_weight_error": 0.004656767322898367,
+          "fixed_level_rho_min": 1.034055604393102,
+          "fixed_level_rho_max": 1.034055604393102,
+          "profiled_level_rho_min": 1.0338478207790194,
+          "profiled_level_rho_max": 1.0338478207790194
+        },
+        "2023": {
+          "max_abs_weight_error": 0.01376273632264724,
+          "fixed_level_rho_min": 0.8993511440294755,
+          "fixed_level_rho_max": 0.8993511440294755,
+          "profiled_level_rho_min": 0.8975362478052799,
+          "profiled_level_rho_max": 0.8975362478052799
+        },
+        "2024": {
+          "max_abs_weight_error": 0.0,
+          "fixed_level_rho_min": 1.0,
+          "fixed_level_rho_max": 1.0,
+          "profiled_level_rho_min": 1.0,
+          "profiled_level_rho_max": 1.0
+        }
+      }
+    }
+  },
+  "partition_cross_canonical_2024": {
+    "count12__month": 0.01793175546225136,
+    "count12__inning": 0.021866920142087222,
+    "count12__hand4": 0.022746791242436965,
+    "month__inning": 0.027284268077528116,
+    "month__hand4": 0.04327933814071643,
+    "inning__hand4": 0.15913521333121036,
+    "game_type__count12": 0.020538976401114354,
+    "game_type__month": 0.15308673317506408,
+    "game_type__inning": 0.017577592758443738,
+    "game_type__hand4": 0.1165397104690276
+  },
+  "folds": {
+    "2021": {
+      "n": 247088,
+      "r": 0.5327616072006734,
+      "raw_mean": 0.5258978339001552,
+      "shape": {
+        "base_score_affine_plus_game_type": 1932.938666354067,
+        "residual_brier": 0.2441150771012157,
+        "quadratic": {
+          "mean_g2": 8.755915319197054e-06,
+          "curvature": 3.5174676420493465,
+          "corr_residual": -0.002412563201047801,
+          "oracle_gain": 0.5707955253973439,
+          "max_abs_g": 0.03309709354288879
+        },
+        "cubic_after_affine": {
+          "mean_g2": 7.369237546623747e-08,
+          "curvature": 0.029604049002156393,
+          "corr_residual": -0.0015305420833887902,
+          "oracle_gain": 0.2297278838996748,
+          "max_abs_g": 0.005691177511452747
+        },
+        "cubic_unique_after_quadratic": {
+          "mean_g2": 6.983491203465207e-08,
+          "curvature": 0.02805441057986126,
+          "corr_residual": -0.0010052317427715583,
+          "oracle_gain": 0.09909586881868905,
+          "max_abs_g": 0.0063858658200434005
+        },
+        "logit_intercept_tangent": {
+          "mean_g2": 8.755915319197054e-06,
+          "curvature": 3.5174676420493465,
+          "corr_residual": 0.0024125632010477895,
+          "oracle_gain": 0.5707955253973386,
+          "max_abs_g": 0.033097093542888756
+        },
+        "logit_slope_tangent": {
+          "mean_g2": 1.1596645164021076e-06,
+          "curvature": 0.46586590474829787,
+          "corr_residual": 0.002447216501310892,
+          "oracle_gain": 0.5873107447358894,
+          "max_abs_g": 0.02069006703840176
+        },
+        "logit_joint_gain": 0.6655781969402497,
+        "poly_joint_gain": 0.669891394216029,
+        "logit_vs_poly_canonical": [
+          1.000000000000001,
+          0.9999219942825676
+        ],
+        "axis_correlations": {
+          "q2_q3_aff": 0.22879136572499742,
+          "q2_logit_intercept": -1.0,
+          "q3_unique_logit_slope": -0.6719981834571416
+        }
+      },
+      "partition_oracle_after_profile": {
+        "count12": {
+          "cells": 12,
+          "gain": 5.333750272319981,
+          "bias_max_abs": 0.007179188669718897
+        },
+        "month": {
+          "cells": 7,
+          "gain": 22.252992658308425,
+          "bias_max_abs": 0.01676135385835485
+        },
+        "month_m34": {
+          "cells": 7,
+          "gain": 22.252992658308425,
+          "bias_max_abs": 0.01676135385835485
+        },
+        "inning": {
+          "cells": 10,
+          "gain": 4.225103561977556,
+          "bias_max_abs": 0.009698640072577492
+        },
+        "hand4": {
+          "cells": 4,
+          "gain": 10.611433255568175,
+          "bias_max_abs": 0.013700014684133231
+        }
+      },
+      "partition_slope_canonical": {
+        "count12": 0.14733220864873586,
+        "month": 0.16775980222082323,
+        "month_m34": 0.16775980222082323,
+        "inning": 0.13797686022567593,
+        "hand4": 0.19591445641175834,
+        "game_type": 0.5231670985448926
+      },
+      "game_type_slope_corr": 0.523167098544895,
+      "game_type_slope_H_cross": 3055.594144257141,
+      "required_abs_corr_for_gain20": 0.014280828940543597
+    },
+    "2022": {
+      "n": 247472,
+      "r": 0.5289204435249241,
+      "raw_mean": 0.5321828619388161,
+      "shape": {
+        "base_score_affine_plus_game_type": 2393.6216316185146,
+        "residual_brier": 0.24319957392839736,
+        "quadratic": {
+          "mean_g2": 2.904693595488139e-05,
+          "curvature": 11.657776267687971,
+          "corr_residual": 0.014245746326735807,
+          "oracle_gain": 19.80836418269424,
+          "max_abs_g": 0.04826416178630717
+        },
+        "cubic_after_affine": {
+          "mean_g2": 1.3285434623789047e-06,
+          "curvature": 0.5332012460925346,
+          "corr_residual": 0.014081828035828319,
+          "oracle_gain": 19.35513798600372,
+          "max_abs_g": 0.014614553749957914
+        },
+        "cubic_unique_after_quadratic": {
+          "mean_g2": 4.1974812892368167e-07,
+          "curvature": 0.16846285554434165,
+          "corr_residual": 0.004091011656266291,
+          "oracle_gain": 1.6335770846524398,
+          "max_abs_g": 0.007896035752584015
+        },
+        "logit_intercept_tangent": {
+          "mean_g2": 2.9046935954881374e-05,
+          "curvature": 11.657776267687964,
+          "corr_residual": -0.014245746326735802,
+          "oracle_gain": 19.808364182694223,
+          "max_abs_g": 0.04826416178630691
+        },
+        "logit_slope_tangent": {
+          "mean_g2": 2.1571614216202738e-05,
+          "curvature": 8.657610312357493,
+          "corr_residual": -0.01459548855693976,
+          "oracle_gain": 20.79291950754329,
+          "max_abs_g": 0.0580482687399837
+        },
+        "logit_joint_gain": 21.276376523825363,
+        "poly_joint_gain": 21.441941267346717,
+        "logit_vs_poly_canonical": [
+          0.999999999999999,
+          0.9991777246057785
+        ],
+        "axis_correlations": {
+          "q2_q3_aff": 0.827075508954676,
+          "q2_logit_intercept": -1.0,
+          "q3_unique_logit_slope": -0.4047860298749172
+        }
+      },
+      "partition_oracle_after_profile": {
+        "count12": {
+          "cells": 12,
+          "gain": 7.1274441941800095,
+          "bias_max_abs": 0.011927186301456706
+        },
+        "month": {
+          "cells": 7,
+          "gain": 55.51419200228753,
+          "bias_max_abs": 0.01926387980832438
+        },
+        "month_m34": {
+          "cells": 7,
+          "gain": 55.51419200228753,
+          "bias_max_abs": 0.01926387980832438
+        },
+        "inning": {
+          "cells": 10,
+          "gain": 8.547810215897593,
+          "bias_max_abs": 0.015407181932542566
+        },
+        "hand4": {
+          "cells": 4,
+          "gain": 1.3200389693259278,
+          "bias_max_abs": 0.004325734818415991
+        }
+      },
+      "partition_slope_canonical": {
+        "count12": 0.07694363895816533,
+        "month": 0.07731675637928044,
+        "month_m34": 0.07731675637928044,
+        "inning": 0.10014784990107836,
+        "hand4": 0.1500724438804507,
+        "game_type": 0.8626259390583054
+      },
+      "game_type_slope_corr": 0.8626259390583138,
+      "game_type_slope_H_cross": 9010.200222342211,
+      "required_abs_corr_for_gain20": 0.014314490624226161
+    },
+    "2023": {
+      "n": 245525,
+      "r": 0.49995723449750534,
+      "raw_mean": 0.5170962141434644,
+      "shape": {
+        "base_score_affine_plus_game_type": 660.1549039483178,
+        "residual_brier": 0.24834961092331448,
+        "quadratic": {
+          "mean_g2": 1.696457344098177e-05,
+          "curvature": 6.785829426034803,
+          "corr_residual": -0.000558316388745046,
+          "oracle_gain": 0.030965937362546186,
+          "max_abs_g": 0.03822632629892035
+        },
+        "cubic_after_affine": {
+          "mean_g2": 5.795736118928393e-07,
+          "curvature": 0.2318294464530963,
+          "corr_residual": 6.046593374556435e-05,
+          "oracle_gain": 0.0003631993027886007,
+          "max_abs_g": 0.010427449959199208
+        },
+        "cubic_unique_after_quadratic": {
+          "mean_g2": 2.9662361702378575e-07,
+          "curvature": 0.11864944767750062,
+          "corr_residual": 0.0006298165863772567,
+          "oracle_gain": 0.039405030306572136,
+          "max_abs_g": 0.008313207081916787
+        },
+        "logit_intercept_tangent": {
+          "mean_g2": 1.6964573440981774e-05,
+          "curvature": 6.7858294260348035,
+          "corr_residual": 0.0005583163887450505,
+          "oracle_gain": 0.03096593736254668,
+          "max_abs_g": 0.03822632629892039
+        },
+        "logit_slope_tangent": {
+          "mean_g2": 6.724121318854859e-06,
+          "curvature": 2.68964854721821,
+          "corr_residual": 0.00010356417202282429,
+          "oracle_gain": 0.0010654732563495021,
+          "max_abs_g": 0.035859707247036576
+        },
+        "logit_joint_gain": 0.06533509155271017,
+        "poly_joint_gain": 0.0703709676691192,
+        "logit_vs_poly_canonical": [
+          1.0000000000000036,
+          0.9997628499698287
+        ],
+        "axis_correlations": {
+          "q2_q3_aff": 0.6987157667022942,
+          "q2_logit_intercept": -0.9999999999999993,
+          "q3_unique_logit_slope": -0.5900468920524726
+        }
+      },
+      "partition_oracle_after_profile": {
+        "count12": {
+          "cells": 12,
+          "gain": 3.5138790974390286,
+          "bias_max_abs": 0.012961245722090035
+        },
+        "month": {
+          "cells": 7,
+          "gain": 72.03689500058721,
+          "bias_max_abs": 0.01947971646067525
+        },
+        "month_m34": {
+          "cells": 7,
+          "gain": 72.03689500058721,
+          "bias_max_abs": 0.01947971646067525
+        },
+        "inning": {
+          "cells": 10,
+          "gain": 8.013941298628746,
+          "bias_max_abs": 0.02220717471218714
+        },
+        "hand4": {
+          "cells": 4,
+          "gain": 14.745362737339732,
+          "bias_max_abs": 0.007329209464954288
+        }
+      },
+      "partition_slope_canonical": {
+        "count12": 0.12067475250146253,
+        "month": 0.19890454993857545,
+        "month_m34": 0.19890454993857545,
+        "inning": 0.09168106923170145,
+        "hand4": 0.18792383359252773,
+        "game_type": 0.8101555022073597
+      },
+      "game_type_slope_corr": 0.8101555022073508,
+      "game_type_slope_H_cross": 6672.844167178491,
+      "required_abs_corr_for_gain20": 0.014189048023736876
+    },
+    "2024": {
+      "n": 253507,
+      "r": 0.4861049201797189,
+      "raw_mean": 0.4965844354517623,
+      "shape": {
+        "base_score_affine_plus_game_type": 906.1693379797342,
+        "residual_brier": 0.24754325298236848,
+        "quadratic": {
+          "mean_g2": 8.790693483707346e-06,
+          "curvature": 3.518995088661398,
+          "corr_residual": -0.002450517287417599,
+          "oracle_gain": 0.5950619190245648,
+          "max_abs_g": 0.025429877427180263
+        },
+        "cubic_after_affine": {
+          "mean_g2": 4.5278683722057e-08,
+          "curvature": 0.01812547166321786,
+          "corr_residual": -0.0014405195513714892,
+          "oracle_gain": 0.2056292688961269,
+          "max_abs_g": 0.003026685059266802
+        },
+        "cubic_unique_after_quadratic": {
+          "mean_g2": 4.010183459355371e-08,
+          "curvature": 0.01605313155811602,
+          "corr_residual": -0.0006502208130141824,
+          "oracle_gain": 0.04189559385602489,
+          "max_abs_g": 0.0036437991351069626
+        },
+        "logit_intercept_tangent": {
+          "mean_g2": 8.790693483707346e-06,
+          "curvature": 3.518995088661398,
+          "corr_residual": 0.002450517287417612,
+          "oracle_gain": 0.5950619190245712,
+          "max_abs_g": 0.02542987742718028
+        },
+        "logit_slope_tangent": {
+          "mean_g2": 3.0558729268982453e-07,
+          "curvature": 0.12232939120513031,
+          "corr_residual": 0.0011285576582540672,
+          "oracle_gain": 0.12621010312082992,
+          "max_abs_g": 0.00899875872075534
+        },
+        "logit_joint_gain": 0.6360403407739734,
+        "poly_joint_gain": 0.6369575128805907,
+        "logit_vs_poly_canonical": [
+          1.000000000000011,
+          0.9999879140987793
+        ],
+        "axis_correlations": {
+          "q2_q3_aff": 0.33813167632349694,
+          "q2_logit_intercept": -0.9999999999999997,
+          "q3_unique_logit_slope": -0.979038938916094
+        }
+      },
+      "partition_oracle_after_profile": {
+        "count12": {
+          "cells": 12,
+          "gain": 12.894020818237278,
+          "bias_max_abs": 0.009417794439384196
+        },
+        "month": {
+          "cells": 8,
+          "gain": 13.805339483456844,
+          "bias_max_abs": 0.02283121519738484
+        },
+        "month_m34": {
+          "cells": 7,
+          "gain": 11.150439729213975,
+          "bias_max_abs": 0.02283121519738484
+        },
+        "inning": {
+          "cells": 10,
+          "gain": 2.2480195134626486,
+          "bias_max_abs": 0.005256055506015625
+        },
+        "hand4": {
+          "cells": 4,
+          "gain": 1.000144022128785,
+          "bias_max_abs": 0.004262378111022883
+        }
+      },
+      "partition_slope_canonical": {
+        "count12": 0.16181307841806528,
+        "month": 0.04552418128957336,
+        "month_m34": 0.043851245073588445,
+        "inning": 0.1474375407563033,
+        "hand4": 0.33468217294950536,
+        "game_type": 0.18408315960582255
+      },
+      "game_type_slope_corr": -0.18408315960582036,
+      "game_type_slope_H_cross": -1093.7736425534956,
+      "required_abs_corr_for_gain20": 0.014206650263630851
+    }
+  },
+  "blend_table": [
+    {
+      "S_B_affine": 850.0,
+      "s": 0.0134,
+      "breakeven_s": 0.020885201046806186,
+      "pre_recal_w": 0.0,
+      "pre_recal_gain": 0.0,
+      "shape_s_perp": 0.01181100811210289,
+      "post_recal_blend_w": 0.0,
+      "post_recal_slope_multiplier": 1.0,
+      "post_recal_gain": 0.0,
+      "interior_solution": false
+    },
+    {
+      "S_B_affine": 850.0,
+      "s": 0.02,
+      "breakeven_s": 0.020885201046806186,
+      "pre_recal_w": 0.0,
+      "pre_recal_gain": 0.0,
+      "shape_s_perp": 0.01805886116643511,
+      "post_recal_blend_w": 0.0,
+      "post_recal_slope_multiplier": 1.0,
+      "post_recal_gain": 0.0,
+      "interior_solution": false
+    },
+    {
+      "S_B_affine": 850.0,
+      "s": 0.03,
+      "breakeven_s": 0.020885201046806186,
+      "pre_recal_w": 0.25767132068582543,
+      "pre_recal_gain": 24.049217201474477,
+      "shape_s_perp": 0.026671296578753858,
+      "post_recal_blend_w": 0.2985232394051228,
+      "post_recal_slope_multiplier": 1.092049161740039,
+      "post_recal_gain": 30.426724124083197,
+      "interior_solution": true
+    },
+    {
+      "S_B_affine": 850.0,
+      "s": 0.045,
+      "breakeven_s": 0.020885201046806186,
+      "pre_recal_w": 0.3922983647492557,
+      "pre_recal_gain": 125.4250525402942,
+      "shape_s_perp": 0.03721535758005561,
+      "post_recal_blend_w": 0.44179161149651724,
+      "post_recal_slope_multiplier": 1.298313782539017,
+      "post_recal_gain": 183.3854717136291,
+      "interior_solution": true
+    },
+    {
+      "S_B_affine": 900.0,
+      "s": 0.0134,
+      "breakeven_s": 0.017662295663482735,
+      "pre_recal_w": 0.0,
+      "pre_recal_gain": 0.0,
+      "shape_s_perp": 0.01241105641554588,
+      "post_recal_blend_w": 0.0,
+      "post_recal_slope_multiplier": 1.0,
+      "post_recal_gain": 0.0,
+      "interior_solution": false
+    },
+    {
+      "S_B_affine": 900.0,
+      "s": 0.02,
+      "breakeven_s": 0.017662295663482735,
+      "pre_recal_w": 0.11005413986964868,
+      "pre_recal_gain": 1.9498402338239664,
+      "shape_s_perp": 0.018613006942562262,
+      "post_recal_blend_w": 0.12468358759918216,
+      "post_recal_slope_multiplier": 1.019116907045666,
+      "post_recal_gain": 2.2512614787563265,
+      "interior_solution": true
+    },
+    {
+      "S_B_affine": 900.0,
+      "s": 0.03,
+      "breakeven_s": 0.017662295663482735,
+      "pre_recal_w": 0.32669072883095496,
+      "pre_recal_gain": 38.65826843939399,
+      "shape_s_perp": 0.02729113386543815,
+      "post_recal_blend_w": 0.35851648883153053,
+      "post_recal_slope_multiplier": 1.1011006661723672,
+      "post_recal_gain": 46.71342896249386,
+      "interior_solution": true
+    },
+    {
+      "S_B_affine": 900.0,
+      "s": 0.045,
+      "breakeven_s": 0.017662295663482735,
+      "pre_recal_w": 0.4229736572582022,
+      "pre_recal_gain": 145.80685309048067,
+      "shape_s_perp": 0.03805213645779435,
+      "post_recal_blend_w": 0.4578016155427483,
+      "post_recal_slope_multiplier": 1.2921202598048285,
+      "post_recal_gain": 203.91298087967417,
+      "interior_solution": true
+    },
+    {
+      "S_B_affine": 1000.0,
+      "s": 0.0134,
+      "breakeven_s": 0.007967861619143172,
+      "pre_recal_w": 0.3232155859272253,
+      "pre_recal_gain": 7.549539382818141,
+      "shape_s_perp": 0.013165052970838706,
+      "post_recal_blend_w": 0.32919344744361534,
+      "post_recal_slope_multiplier": 1.0171979771924502,
+      "post_recal_gain": 7.82140599625013,
+      "interior_solution": true
+    },
+    {
+      "S_B_affine": 1000.0,
+      "s": 0.02,
+      "breakeven_s": 0.007967861619143172,
+      "pre_recal_w": 0.42064147652273143,
+      "pre_recal_gain": 28.48462105344297,
+      "shape_s_perp": 0.019424279394566448,
+      "post_recal_blend_w": 0.42728361552122157,
+      "post_recal_slope_multiplier": 1.0436767583013082,
+      "post_recal_gain": 30.19816856678733,
+      "interior_solution": true
+    },
+    {
+      "S_B_affine": 1000.0,
+      "s": 0.03,
+      "breakeven_s": 0.007967861619143172,
+      "pre_recal_w": 0.46472954512121395,
+      "pre_recal_gain": 78.22928213700246,
+      "shape_s_perp": 0.02831814474014537,
+      "post_recal_blend_w": 0.47150128824436166,
+      "post_recal_slope_multiplier": 1.1061914947386502,
+      "post_recal_gain": 87.79752230506048,
+      "interior_solution": true
+    },
+    {
+      "S_B_affine": 1000.0,
+      "s": 0.045,
+      "breakeven_s": 0.007967861619143172,
+      "pre_recal_w": 0.4843242422760951,
+      "pre_recal_gain": 191.1717480671955,
+      "shape_s_perp": 0.0395492739289702,
+      "post_recal_blend_w": 0.4911195361751436,
+      "post_recal_slope_multiplier": 1.2767239204759226,
+      "post_recal_gain": 247.49800877143625,
+      "interior_solution": true
+    }
+  ],
+  "required_corr_2025": 0.014215215625875183,
+  "shape_probe_design": {
+    "target_no_signal_cost": 4.0,
+    "quadratic": {
+      "curvature": 3.72,
+      "delta": 1.0369516947304251,
+      "tstar_if_gain20": 2.3186944788008415,
+      "max_move_at_tstar_using_given_range": 0.05377052496339151
+    },
+    "cubic": {
+      "curvature": 0.054,
+      "delta": 8.606629658238704,
+      "tstar_if_gain20": 19.245008972987527
+    }
+  }
+}

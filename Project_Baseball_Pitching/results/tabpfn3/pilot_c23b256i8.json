@@ -1,0 +1,14 @@
+{
+ "tag": "c23b256i8",
+ "context": "c23",
+ "n_ctx": 245525,
+ "n_query": 30000,
+ "n_est": 1,
+ "fit_mode": "fit_with_cache",
+ "kv": "int8",
+ "timing": {
+  "fit_s": 80.8,
+  "per_1k_s": 36.66,
+  "proj_245k_min_local": 150.2
+ }
+}

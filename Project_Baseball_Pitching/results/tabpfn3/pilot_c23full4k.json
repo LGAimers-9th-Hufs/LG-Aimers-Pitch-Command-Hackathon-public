@@ -1,0 +1,28 @@
+{
+ "tag": "c23full4k",
+ "context": "c23",
+ "n_ctx": 245525,
+ "n_query": 4000,
+ "n_est": 1,
+ "ref_lgbm": {
+  "score": 473.11826022775614,
+  "train_s": 4.2
+ },
+ "fit_mode": "fit_with_cache",
+ "kv": "int8",
+ "timing": {
+  "fit_s": 83.1,
+  "per_1k_s": 29.01,
+  "proj_245k_min_local": 118.9
+ },
+ "tabpfn": {
+  "score": -1646.5544700622559,
+  "pred_s": 59.1,
+  "mean": 0.4971010684967041,
+  "sd": 0.08596128225326538
+ },
+ "paired": {
+  "delta": -2119.67,
+  "se": 493.28
+ }
+}

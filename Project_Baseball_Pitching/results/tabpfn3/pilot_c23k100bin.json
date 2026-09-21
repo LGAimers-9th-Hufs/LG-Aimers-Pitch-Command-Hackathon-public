@@ -1,0 +1,38 @@
+{
+ "tag": "c23k100bin",
+ "context": "c23",
+ "n_ctx": 100000,
+ "n_query": 30000,
+ "n_est": 1,
+ "ref_lgbm": {
+  "score": 65.02762533782125,
+  "train_s": 2.2
+ },
+ "fit_mode": "fit_with_cache",
+ "kv": "int8",
+ "timing": {
+  "fit_s": 28.7,
+  "per_1k_s": 3.9,
+  "proj_245k_min_local": 16.0
+ },
+ "tabpfn": {
+  "score": -867.6767349243164,
+  "pred_s": 110.0,
+  "mean": 0.47760358452796936,
+  "sd": 0.06724143028259277
+ },
+ "paired": {
+  "delta": -932.7,
+  "se": 166.12
+ },
+ "rms_vs_legs": {
+  "cregime": 0.0612,
+  "clookup": 0.06138,
+  "cmoe": 0.06206,
+  "physmix": 0.06454,
+  "tm3L": 0.06642,
+  "ysy_mlp": 0.06443,
+  "calP": 0.06554,
+  "D4_mean": 0.06215
+ }
+}

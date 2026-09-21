@@ -1,0 +1,9 @@
+{
+ "fold": 2022,
+ "arm": "legP",
+ "seeds": 3,
+ "solo_mean": 2223.93,
+ "solo_sd": 17.71,
+ "solo_bag": 2252.45,
+ "teacher": 2084.9
+}

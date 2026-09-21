@@ -1,0 +1,22 @@
+{
+  "files": [
+    "predict.py",
+    "trajectory_model.txt",
+    "hybrid_model.txt",
+    "trajectory_lookup.npz",
+    "model_meta.json",
+    "selftest.py"
+  ],
+  "sha256": {
+    "predict.py": "8c869a7e9b117b687d9cf47de2c2fc7ca12e95cdae97adc281ae056a6405c446",
+    "trajectory_model.txt": "c8d90b3b55cfede7adfb9e6f780e4c6badc6d569857fb8e06928c415ff2de0b9",
+    "hybrid_model.txt": "cfdf29aa57e0216b68caf942fe35820f6a7cea6930c33a587eed17f655c60399",
+    "trajectory_lookup.npz": "35a703efbb908816139c3d16ce743172f5a9feb708da41f7fb8bbc7d7b9a22b0",
+    "model_meta.json": "179616bd032d96c9aeb89ba20542c84d38292f289e4bf066cba2446102b60e49",
+    "selftest.py": "5b3646bb4ec5b90469685468b1ffb129389b28fc43303e1e3077115db83b48ee"
+  },
+  "trained_through_season": 2024,
+  "raw_mean_2024": 0.4598991505216809,
+  "raw_std_2024": 0.03536057898837493,
+  "seed": 260809
+}

@@ -1,0 +1,16 @@
+{
+ "tag": "c23_e1",
+ "context": "c23",
+ "n_ctx": 245525,
+ "n_query": 30000,
+ "n_est": 1,
+ "ref_lgbm": {
+  "score": 355.0555985628812,
+  "train_s": 3.9
+ },
+ "timing": {
+  "fit_s": 1.8,
+  "per_1k_s": 226.37,
+  "proj_245k_min_local": 927.3
+ }
+}

